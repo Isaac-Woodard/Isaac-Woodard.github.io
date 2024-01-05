@@ -1,1 +1,1 @@
-# Site Under Construction
+Site is under construction. Lots to do.
