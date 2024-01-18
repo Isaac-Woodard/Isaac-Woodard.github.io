@@ -3,6 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
 </head>
 <body>
     <header>
@@ -52,7 +62,7 @@
         <p>The best multiplayer game I've played to date is Deep Rock Galactic, where players take on the role of dwarves mining the alien-infested caves of Hoxxes IV. The game encourages teamwork with freeform mission objectives, but gives each player only a limited selection of equipment to do the job. Players quickly learn that even though they can try to succeed on their own, working together is much more efficient!</p>
     </main>
     <footer>
-        <!--#include file="footer.html" -->
+        <div id="footer"></div>
     </footer>
 </body>
 </html>
