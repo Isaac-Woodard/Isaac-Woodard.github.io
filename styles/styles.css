@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    font-size: 64pt;
+    font-family: Lato, sans-serif;
+    color: rgba(255,255,255,1);
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+h2 {
+    text-align: left;
+    font-size: 19pt;
+    font-family: Lato, sans-serif;
+    line-height: 1.4;
+    color: rgba(34,110,147,1);
+}
+
+h3 {
+    text-align: left;
+    font-size: 15pt;
+    font-family: Lato, sans-serif;
+    line-height: 1.25;
+    color: rgba(33,33,33,1);
+}
+
+p {
+    text-align: left;
+    font-size: 11pt;
+    font-family: Lato, sans-serif;
+    line-height: 1.6667;
+    color: rgba(33,33,33,1);
+}
