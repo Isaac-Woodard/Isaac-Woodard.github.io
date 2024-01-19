@@ -23,10 +23,68 @@ h3 {
     color: rgba(33,33,33,1);
 }
 
+h4 {
+    text-align: left;
+    font-size: 11pt;
+    font-family: Lato, sans-serif;
+    line-height: 1.6667;
+    color: rgba(33,33,33,1);
+    font-weight: bold;
+}
+
 p {
     text-align: left;
     font-size: 11pt;
     font-family: Lato, sans-serif;
     line-height: 1.6667;
     color: rgba(33,33,33,1);
+}
+
+small {
+    text-align: center;
+    font-size: 9pt;
+    font-family: Lato, sans-serif;
+    line-height: 1.7999999999999998;
+    color: rgba(33,33,33,1);
+    font-weight: 400;
+}
+
+a {
+    color: rgba(0,101,128,1);
+}
+
+h1.home {
+    text-align: center;
+    font-size: 64pt;
+    font-family: 'Lato', 'Arial';
+    line-height: 1;
+    color: rgba(255,255,255,1);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+h2.home {
+    text-align: center;
+    font-size: 18.0pt;
+    font-family: 'Lato', 'Arial';
+    line-height: 1.6667;
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+} 
+
+h3.home {
+    text-align: center;
+    font-size: 14pt;
+    font-family: 'Lato', 'Arial';
+    line-height: 1.6667;
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+}
+
+h2.nav {
+    text-align: left;
+    font-size: 12pt;
+    font-family: Lato, sans-serif;
+    color: rgba(255,255,255,1);
+    font-weight: 300;
 }
