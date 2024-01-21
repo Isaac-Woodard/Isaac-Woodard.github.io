@@ -29,6 +29,7 @@ h3 {
     font-family: Lato, sans-serif;
     line-height: 1.25;
     color: rgba(33,33,33,1);
+    padding-left: 20%;
 }
 
 h4 {
@@ -38,6 +39,8 @@ h4 {
     line-height: 1.6667;
     color: rgba(33,33,33,1);
     font-weight: bold;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 p {
@@ -46,6 +49,8 @@ p {
     font-family: Lato, sans-serif;
     line-height: 1.6667;
     color: rgba(33,33,33,1);
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 small {
@@ -116,6 +121,26 @@ h2.nav a {
     color: rgba(255,255,255,1);
 }
 
+h2.right {
+    text-align: right;
+    flex: 1;
+}
+
+h2.left {
+    flex: 1;
+}
+
 h3.center {
     text-align: center;
+}
+
+span.header {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: gainsboro;
+}
+
+p.subheading {
+    background-color: gainsboro;
 }
