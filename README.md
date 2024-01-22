@@ -9,3 +9,6 @@ https://isaac-woodard.github.io/
 - Make nav bar scroll with page. Turn dark when scrolled.
 - Add project pages
 - Add images for projects
+- Add favicon
+- Fix footer.
+- Use better selector for span.header.

@@ -6,10 +6,11 @@ h1 {
     text-align: center;
     font-size: 64pt;
     font-family: Lato, sans-serif;
+    line-height: 340px;
     color: rgba(255,255,255,1);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: 300;
-    background-color: rgba(34,110,147,1);
+    background-color: rgb(10, 64, 98);
     margin: 0;
     padding: 0;
 }
@@ -18,18 +19,19 @@ h2 {
     text-align: left;
     font-size: 19pt;
     font-family: Lato, sans-serif;
-    line-height: 1.4;
+    line-height: 2;
     color: rgba(34,110,147,1);
-    background-color: gainsboro;
+    font-weight: 400;
 }
 
 h3 {
     text-align: left;
     font-size: 15pt;
     font-family: Lato, sans-serif;
-    line-height: 1.25;
+    line-height: 2;
     color: rgba(33,33,33,1);
     padding-left: 20%;
+    font-weight: 400;
 }
 
 h4 {
@@ -53,6 +55,14 @@ p {
     padding-right: 20%;
 }
 
+ul {
+    text-align: left;
+    font-size: 11pt;
+    font-family: Lato, sans-serif;
+    line-height: 1.6667;
+    color: rgba(33,33,33,1); 
+}
+
 small {
     text-align: center;
     font-size: 9pt;
@@ -67,19 +77,22 @@ a {
 }
 
 nav {
-    padding-right: 10px;
+    padding-left: 30px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 5px;
-    background-color: rgba(34,110,147,1)
+    gap: 30px;
+    background-color: rgb(34, 34, 34);
+    height: 55px;
+    position: fixed;
+    width: 100%;
 }
 
 body.home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
                       url("../images/HomeBG.JPG");
     background-size: cover;
-    background-position: 0% 35%;
+    background-position: 0% 50%;
+    overflow: hidden;
 }
 
 h1.home {
@@ -92,7 +105,7 @@ h1.home {
 h2.home {
     text-align: center;
     font-family: 'Lato', 'Arial';
-    line-height: 1.6667;
+    line-height: 1;
     color: rgba(255,255,255,1);
     font-weight: bold;
     background-color: transparent;
@@ -101,13 +114,25 @@ h2.home {
 h3.home {
     text-align: center;
     font-family: 'Lato', 'Arial';
-    line-height: 1.6667;
+    line-height: 1;
     color: rgba(255,255,255,1);
     font-weight: bold;
+    padding-left: 0%;
 }
 
 nav.home {
     background-color: transparent;
+}
+
+nav.home:hover {
+    background-color: rgb(34, 34, 34, 0.3);
+}
+
+main.home {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: calc(100vh - 55px);
 }
 
 h2.nav {
@@ -119,6 +144,7 @@ h2.nav {
 
 h2.nav a {
     color: rgba(255,255,255,1);
+    text-decoration: none;
 }
 
 h2.right {
@@ -131,6 +157,7 @@ h2.left {
 }
 
 h3.center {
+    padding: 0;
     text-align: center;
 }
 
@@ -138,9 +165,31 @@ span.header {
     display: flex;
     padding-left: 20%;
     padding-right: 20%;
-    background-color: gainsboro;
+    background-color: rgb(235, 235, 235);
+}
+
+span.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 p.subheading {
-    background-color: gainsboro;
+    margin: 0;
+    padding-bottom: 1%;
+    background-color: rgb(235, 235, 235);
+}
+
+#portrait {
+    display: flex;
+    margin-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    gap: 20px;
+    align-items: center;
+}
+
+#portrait p {
+    padding: 0;
 }
