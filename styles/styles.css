@@ -6,13 +6,12 @@ h1 {
     text-align: center;
     font-size: 64pt;
     font-family: Lato, sans-serif;
-    line-height: 340px;
-    color: rgba(255,255,255,1);
+    color: rgb(255,255,255);
     letter-spacing: 3px;
     font-weight: 300;
     background-color: rgb(10, 64, 98);
     margin: 0;
-    padding: 0;
+    padding: 120px 0;
 }
 
 h2 {
@@ -20,7 +19,7 @@ h2 {
     font-size: 19pt;
     font-family: Lato, sans-serif;
     line-height: 2;
-    color: rgba(34,110,147,1);
+    color: rgb(34,110,147);
     font-weight: 400;
 }
 
@@ -29,7 +28,7 @@ h3 {
     font-size: 15pt;
     font-family: Lato, sans-serif;
     line-height: 2;
-    color: rgba(33,33,33,1);
+    color: rgb(33,33,33);
     padding-left: 20%;
     font-weight: 400;
 }
@@ -38,8 +37,8 @@ h4 {
     text-align: left;
     font-size: 11pt;
     font-family: Lato, sans-serif;
-    line-height: 1.6667;
-    color: rgba(33,33,33,1);
+    line-height: 1.67;
+    color: rgb(33,33,33);
     font-weight: bold;
     padding-left: 20%;
     padding-right: 20%;
@@ -49,8 +48,8 @@ p {
     text-align: left;
     font-size: 11pt;
     font-family: Lato, sans-serif;
-    line-height: 1.6667;
-    color: rgba(33,33,33,1);
+    line-height: 1.67;
+    color: rgb(33,33,33);
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -59,21 +58,34 @@ ul {
     text-align: left;
     font-size: 11pt;
     font-family: Lato, sans-serif;
-    line-height: 1.6667;
-    color: rgba(33,33,33,1); 
+    line-height: 1.67;
+    color: rgb(33,33,33); 
+}
+
+ol {
+    text-align: left;
+    font-size: 11pt;
+    font-family: Lato, sans-serif;
+    line-height: 1.8;
+    color: rgb(33,33,33); 
+    padding-left: calc(20% + 50px);
+    padding-right: 20%;
+}
+
+address {
+    text-align: center;
 }
 
 small {
-    text-align: center;
     font-size: 9pt;
     font-family: Lato, sans-serif;
-    line-height: 1.7999999999999998;
-    color: rgba(33,33,33,1);
+    line-height: 1.8;
+    color: rgb(33,33,33);
     font-weight: 400;
 }
 
 a {
-    color: rgba(0,101,128,1);
+    color: rgb(0,101,128);
 }
 
 nav {
@@ -106,7 +118,7 @@ h2.home {
     text-align: center;
     font-family: 'Lato', 'Arial';
     line-height: 1;
-    color: rgba(255,255,255,1);
+    color: rgb(255,255,255);
     font-weight: bold;
     background-color: transparent;
 } 
@@ -115,7 +127,7 @@ h3.home {
     text-align: center;
     font-family: 'Lato', 'Arial';
     line-height: 1;
-    color: rgba(255,255,255,1);
+    color: rgb(255,255,255);
     font-weight: bold;
     padding-left: 0%;
 }
@@ -125,7 +137,7 @@ nav.home {
 }
 
 nav.home:hover {
-    background-color: rgb(34, 34, 34, 0.3);
+    background-color: rgba(34, 34, 34, 0.3);
 }
 
 main.home {
@@ -137,13 +149,13 @@ main.home {
 
 h2.nav {
     font-size: 12pt;
-    color: rgba(255,255,255,1);
+    color: rgb(255,255,255);
     font-weight: 300;
     background-color: transparent;
 }
 
 h2.nav a {
-    color: rgba(255,255,255,1);
+    color: rgb(255,255,255);
     text-decoration: none;
 }
 
@@ -161,6 +173,11 @@ h3.center {
     text-align: center;
 }
 
+h1 div.subheading {
+    font-size: 18pt;
+    font-weight: 400;
+}
+
 span.header {
     display: flex;
     padding-left: 20%;
@@ -173,6 +190,14 @@ span.projects {
     grid-template-columns: 1fr 1fr;
     padding-left: 20%;
     padding-right: 20%;
+}
+
+span.showcase {
+    display: grid;
+    height: max-content;
+    padding: 2% 20% 2% 20%;
+    justify-content: center;
+    background-color: rgb(34,110,147); 
 }
 
 p.subheading {

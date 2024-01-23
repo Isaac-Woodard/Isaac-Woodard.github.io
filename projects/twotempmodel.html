@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <meta charset="utf-8" />
+    <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("../footer.html"); 
+      $("#header").load("../header.html");
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h1>
+            Two-Temperature Model
+            <div class="subheading">2022</div>
+        </h1>
+
+        <span class="header">
+            <h2>Review of the Two-Temperature Model for Laser-Material Interactions in Metals</h2>
+        </span>
+        <span class="showcase">
+            <object data="../documents/TwoTemperatureModel.pdf" type="application/pdf" width="800" height="1000">PDF plugin isn't working. Here's a <a href="../documents/TwoTemperatureModel.pdf">download link</a>.</object>
+        </span>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>

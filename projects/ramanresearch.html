@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <meta charset="utf-8" />
+    <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("../footer.html"); 
+      $("#header").load("../header.html");
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h1>
+            Raman Spectroscopy Research
+            <div class="subheading">Fall 2018 & Spring 2019</div>
+        </h1>
+        <p>During my time at Boise State University, I studied in Dr. Dmitri Tenne's Raman Spectroscopy lab. Besides learning the fundamentals of Raman spectroscopy, I had the chance to work with two spectrometer setups and become familiar with the data collection process.</p>
+
+        <h3>Research Overview</h3>
+        <p>The basis of Raman spectroscopy is Raman scattering. When a material is illuminated with a laser, most of the scattered light has the same wavelength as the laser. This light is known as Rayleigh scattering. A small fraction of the scattered light, though, is shifted up or down in wavelength due to vibrational modes in the material. This light is known as Raman scattering. The dependence on vibrational mode energies means Raman scattering contains information about chemical bonds and not just atomic identities.</p>
+        <p></p>
+        <p>This <a href="https://www.horiba.com/int/scientific/technologies/raman-imaging-and-spectroscopy/raman-spectroscopy/">article</a> by Horiba explains the motivations behind Raman spectroscopy in more detail, and this <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/atmos/raman.html">article</a> discusses the fundamental physics.</p>
+        <p>The research I was most involved in was investigating changes in crystal structure of barium titanate nanoparticles. The unit cell of barium titanate contains a titanium atom at its center. At different temperatures, the titanium shifts and alters the crystal structure of the lattice. These changes in crystal structure are reflected in changes to the Raman spectra of the nanoparticles. New peaks can appear and existing peaks might narrow or rise in intensity.</p> 
+        
+        <h3>Equipment</h3>
+        <p>The main spectrometer I worked with was a Jobin Yvon Model T64000. Preparing a sample for measurements was a multistep process involving several pieces of equipment.</p>
+        <ol>
+            <li>Mount sample to plate with silver paint.</li>
+            <li>Turn on water cooling to lasers.</li>
+            <li>Warm up laser.</li>
+            <li>Fill liquid nitrogen chamber for detector.</li>
+            <li>Mount sample in cryostat chamber.</li>
+            <li>Turn on vacuum to cryostat and compressor.</li>
+            <li>Check beam path and direct onto sample.</li>
+            <li>Collect scattered radiation into spectrometer.</li>
+            <li>Adjust aperture and exposure settings.</li>
+        </ol>
+        <p>I mastered all but the last two steps in the process. The purpose of the cryostat was to allow samples to be brought to temperatures as low as about 4 K. That provided a sufficient temperature range to examine shifts in crystal structure of the barium titanate nanoparticles.</p>
+        <p>I also had the chance to work with an Oriel® CS260™ VIS-NIR 1/4 m monochromator. The motivation for using the CS260 was to measure signals in the infrared range. I spent most of my time with the CS260 verifying measurement of a signal from a green laser by troubleshooting the aperture, diffraction grating and detector. Interfacing with the spectrometer was done through LabVIEW.</p>
+
+        <h3>Data Collection</h3>
+        <p>A key part of taking measurements with a spectrometer is setting the exposure time and number of samplings. The former needs to be adjusted to get a clear signal without saturating the detector. The latter helps to filter out noise.</p>
+        <p>Both spectrometers were already calibrated, so determining the wavelength scale with respect to a standard wasn't necessary. In general, a convenient way to calibrate a spectrometer is to use the Rayleigh scattering from the laser signal. At the same time, most of the Rayleigh scattering needs to be filtered out to avoid overwhelming the relatively weak Raman signal.</p>
+        <p>A curious phenomenon I was able to observe  with the Jobin Yvon spectrometer was bombardment of cosmic rays. Occasionally, a sharp spike would appear on the signal trace. The spikes were easy to distinguish from the Raman peaks, but had to be "cleaned up" for software analysis. </p>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>
