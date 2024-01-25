@@ -109,8 +109,10 @@ body.home {
 
 h1.home {
     font-family: 'Lato', 'Arial';
-    line-height: 1;
+    line-height: 86px;
     font-weight: bold;
+    padding-top: calc(50vh - 55px);
+    padding-bottom: 10px;
     background-color: transparent;
 }
 
@@ -132,6 +134,10 @@ h3.home {
     padding-left: 0%;
 }
 
+h3.home a {
+    color: rgb(255,255,255);
+}
+
 nav.home {
     background-color: transparent;
 }
@@ -143,7 +149,6 @@ nav.home:hover {
 main.home {
     display: flex;
     flex-flow: column;
-    justify-content: center;
     height: calc(100vh - 55px);
 }
 
@@ -176,6 +181,7 @@ h3.center {
 h1 div.subheading {
     font-size: 18pt;
     font-weight: 400;
+    letter-spacing: normal;
 }
 
 span.header {
@@ -206,7 +212,7 @@ p.subheading {
     background-color: rgb(235, 235, 235);
 }
 
-#portrait {
+span.wrap {
     display: flex;
     margin-top: 20px;
     padding-left: 20%;
@@ -215,6 +221,14 @@ p.subheading {
     align-items: center;
 }
 
-#portrait p {
+span.wrap p {
     padding: 0;
+}
+
+.bgcolor1 {
+    background-color: rgb(34,110,147);
+}
+
+.bgcolor2 {
+    background-color: rgb(235, 235, 235)
 }

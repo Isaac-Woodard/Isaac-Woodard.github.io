@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <meta charset="utf-8" />
+    <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("../footer.html"); 
+      $("#header").load("../header.html");
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h1>
+            Genome Sort & Search
+            <div class="subheading">Fall 2018</div>
+        </h1>
+
+        <p>The final project of my CS 321 Data Structures course required sorting the human genome using a balanced-tree (B-tree) data structure. The goal was to then search for the frequency of particular DNA sequences in the genome. I worked on the project over the course of a month with my partner Aaron Parish. </p>
+        <p>Efficiency was a major concern, given the human genome is billions of base pairs long. The B-tree structure allowed sorting and searching to be done at maximum theoretical efficiency (<var>n</var> log <var>n</var> time and log <var>n</var> time, respectively). To conserve space, base pairs are encoded as two-bit values. In addition, read and write methods are optimized for storage on a hard disc drive.</p>
+        <p>A diagram of the overall process and program structure is shown below. The process is also detailed along with a summary of the lessons learned from the project!</p>
+        <p><a href="https://github.com/Isaac-Woodard/portfolio/tree/main/Genome%20Sort%20and%20Search">Source code hosted on GitHub</a></p>
+        <p>Genome files were obtained from the National Center for Biotechnology Information (<a href="https://www.ncbi.nlm.nih.gov/guide/genomes-maps/">NCBI genome maps</a>).</p>
+
+        <span class="showcase">
+            <img src="../images/GenomeSortAndSearch/GenomeBlockDiagram.png" alt="Block diagram of program." width="1000">
+        </span>
+
+        <h3>Main Classes</h3>
+        <p><strong>GeneBankCreateBTree.java:</strong> Sorts a genome file and stores as a binary B-tree file.</p>
+        <p><strong>GeneBankSearch.java:</strong> Searches for a DNA sequence in a query file.</p>
+        <h3>B-Tree Classes</h3>
+        <p><strong>BTree.java:</strong> Manages the B-Tree file. Has inner classes <strong>BTreeNode.java</strong> and <strong>Cache.java</strong>.</p>
+        <p><strong>TreeObject.java:</strong> Handles keys for B-tree nodes.</p>
+        <h3>List Classes (From CS 221)</h3>
+        <p><strong>IUDoubleLinkedList.java:</strong> Manages a double-linked list of objects held in nodes.</p>
+        <p><strong>LinearNode2.java:</strong> A node holding an object and references to other nodes in a double-linked list.</p>
+        <p><strong>IndexedUnsortedList.java:</strong> Interface which defines the methods for <strong>IUDoubleLinkedList.java</strong>.</p>
+        <h3>Other Files</h3>
+        <p><strong>Genebank:</strong> Genome from NCBI.</p>
+        <p><strong>B-tree:</strong> Binary file containing sorted genome.</p>
+        <p><strong>Query:</strong> Text document containing DNA sequence to search for.</p>
+
+        <h3>Overview of Algorithm</h3>
+        <p>The process of searching for the frequency of a DNA sequence can be divided into two parts: creating the B-tree and then searching for the sequences. </p>
+        <p>The bulk of the work is done in creating the B-tree with GeneBankCreateBTree.java. The steps to make the B-tree file can be summarized as:</p>
+        <ol>
+            <li>Parse segment of Genebank file</li>
+            <li>Convert into binary</li>
+            <li>Sort through B-tree</li>
+            <li>Write to disk</li>
+        </ol>
+        <p>For a small file, it would be reasonable to perform these steps one at a time. For a file containing the human genome, though, the RAM needed to parse the entire Genebank file before sorting and storing it would be significant. Instead, the gene sequence is broken up into pieces, and each subsequence of a user specified length is stored in a binary B-tree file. A counter for each subsequence is also stored to keep track of how many times it was found.</p>
+        <p>After creating the B-tree file, a search can be made using GeneBankSearch.java. The DNA sequences to search for are specified using a query file. The sequences are read in, converted to binary, and then searched for in the B-tree file. If found the frequency of the sequence is printed to console. </p>
+
+        <h3>Lessons Learned</h3>
+        <p>A couple of important programming best-practices were overlooked in the rush to finish the project. </p>
+        <p>It didn't seem important at the time to make a readme, but it would have been very helpful for this portfolio description! Fortunately, we did leave detailed comments.</p>
+        <p>The other oversight was not using black box testing. There are bugs remaining in the code which weren't addressed due to time limitations. General wisdom, however, is that time spent testing actually saves time debugging later on. It might have been possible to identify and fix those bugs within the allotted timeframe using a systematic debugging process.</p>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>
