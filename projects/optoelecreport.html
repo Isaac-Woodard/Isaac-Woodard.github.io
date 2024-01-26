@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <meta charset="utf-8" />
+    <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("../footer.html"); 
+      $("#header").load("../header.html");
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h1>
+            Optoelectronics Lab
+            <div class="subheading">Summer 2021, PHYS 627</div>
+        </h1>
+
+        <p>The goal of the lab was to explore the properties of photodiodes, LEDs, and laser diodes. The lab started with characterizing the basic properties of a standard diode, a photodetector and an LED. This included measuring the capacitance of a standard diode and using the photodetector to measure the optical power of the LED. The second and third parts of the lab required building an LM317 voltage regulator circuit to power a laser diode. The circuit was first tested with LEDs before being used to investigate the slope efficiency of the laser diode.</p>
+        <p>I wrote the report using LaTeX (recently installed on my desktop to utilize VS Code's sleek interface). Circuit diagrams were made using Circuit Diagram's <a href="https://www.circuit-diagram.org/">online editor</a>.</p>
+        
+        <span class="showcase bgcolor2">
+            <object data="../documents/Optoelectronics Report.pdf" type="application/pdf" width="1000" height="800">PDF plugin isn't working. Here's a <a href="../documents/Optoelectronics Report.pdf">download link</a>.</object>
+        </span>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>

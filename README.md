@@ -12,4 +12,9 @@ https://isaac-woodard.github.io/
 - Figure out image carousel (with captions) for :
   - Ideal Gas Simulation project. (Also fix indenting for bullets)
   - DLA sim project.
+  - Fabry Perot project.
+  - SEM project.
+  - Paper SEM project.
 - Limit width of header 1 to 20% margin.
+- Add images for paper SEM project.
+- Adjust image sizes for TEM project.

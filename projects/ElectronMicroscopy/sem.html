@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../../styles/styles.css"/>
+    <meta charset="utf-8" />
+    <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("../../footer.html"); 
+      $("#header").load("../../header.html");
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h1>
+            Scanning Electron Microsocopy
+            <div class="subheading">Fall 2021</div>
+        </h1>
+        <p>As part of my Fundamentals of Electron Microscopy Course, I had the chance to work on a Thermo Fisher Apreo 2 SEM. The course covered a variety of applications, including: </p>
+        <ul>
+            <li>secondary electron (SE) imaging, </li>
+            <li>backscatter electron (BSE) imaging, </li>
+            <li>low vacuum imaging (i.e. water vapor for charge conduction),</li>
+            <li>sample preparation, </li>
+            <li>energy-dispersive x-ray spectroscopy (EDS), </li>
+            <li>and a niche use of an insulating material as an electron mirror!</li>
+        </ul>
+        <p>Below I talk about each application alongside example images.</p>
+
+        <span class="wrap">
+            <div>
+                <h3 class="center">SE Imaging</h3>
+                <p>Secondary electrons are displaced from the sample by the high energy electron beam. They are one of the two main types of electron emission.</p>
+                <p>Imaging with secondary electrons allows capture of fine surface detail. This is because their low energy prevents them escaping from "deep" inside the sample. SE detection can be encouraged by applying a positive to the detector.</p>
+            </div>
+            <figure>
+                <img src="../../images/ElectronMicroscopy/SEM/PremiumSE.png" alt="SE image of printer paper."/>
+                <caption>Premium Printer Paper</caption>
+            </figure> 
+        </span>
+
+        <span class="wrap bgcolor1">
+            <figure>
+                <img src="../../images/ElectronMicroscopy/SEM/PremiumBSE.png" alt="BSE image of printer paper."/>
+                <caption>Premium Printer Paper</caption>
+            </figure> 
+            <div>
+                <h3 class="center">BSE Imaging</h3>
+                <p>Backscattered electrons originate from the electron beam. They return out of the sample after scattering events such as deflection or collision.</p>
+                <p>Imaging with backscatter electrons allows features or atomic identity below the surface of the material to be probed. It is possible to discriminate for BSE detection by applying a negative bias to the detector. </p>
+            </div>
+        </span>
+
+        <span class="wrap">
+            <div>
+                <h3 class="center">Sample Preparation</h3>
+                <p>There are two main concerns when preparing SEM samples: </p>
+                <ol>
+                    <li>Charge conduction is needed to image the sample.</li>
+                    <li>The key characteristics of the sample need to be preserved.</li>
+                </ol>
+                <p>The method of sample preparation I have the most experience with is sputter coating. It addresses the charge conduction need by coating the sample in a thin layer of metal using vapor deposition. Gold and palladium are commonly used--likely to avoid undesirable oxidation while transporting the sample.</p>
+                <p>Sputter coating is not suitable for heat sensitive materials and is likely to damage organic specimens. Some damage can be seen in the curling of the stone paper I tried to sputter coat! The regular paper and fly (not mine) didn't show signs of damage.</p>
+            </div>
+            <img src="" alt=""/>
+            <!-- 
+               Premium printer, index card, and stone paper samples. 
+               Paper samples after sputter coating. Fly not mine.
+             -->
+        </span>
+
+        <span class="wrap bgcolor1">
+            <img src="" alt=""/>
+            <!-- 
+                Sputter coated stone paper at 25000x magnification.
+                Uncoated stone paper at 10000x magnification.
+             -->
+            <div>
+                <h3 class="center">Low Vacuum Imaging</h3>
+                <p>Sample preparation methods often involve some degree of damage to a sample. Low vacuum imaging provides a way to image insulating samples without any preparation. A small amount of water vapor is added to the chamber with the sample. This water vapor is ionized by the electron beam and acts as the vehicle for dissipating charge.</p>
+                <p>The introduction of water vapor in the chamber reduces the maximum imaging resolution, so there is a price to pay (beyond the dollar cost). This is shown in the pair of images on the left. The first is an image of sputter coated stone paper imaged in SE mode at 25000x, while the second is an image of uncoated stone paper at 10000x using low vacuum imaging. Compared to optical microscopy, the low vacuum results are impressive, but there is a significant loss in maximum resolution from standard SEM imaging.</p>
+            </div>
+        </span>
+
+        <span class="wrap">
+            <div>
+                <h3 class="center">EDS</h3>
+                <p>Energy-dispersive x-ray spectroscopy is a natural addition to an SEM's toolkit. The electron beam excites the electrons of the sample into higher states, leading to the generation of characteristic spectra. The spectra can be used to identify relative amounts of elements.</p>
+                <p>Some advantages of EDS are that it can be quick and isn't any more destructive than the electron beam itself. However, it is mostly limited to relative quantitative analysis. Absolute quantitative analysis is difficult, though it can be done by by collecting spectra from a reference sample of known composition. </p>
+                <p>Shown to the right are spectra for premium bright printer paper stone paper. The printer paper spectra is quite simple--we see gold and palladium peaks from the sputter coating and carbon and oxygen peaks from the organic material of the paper. Things are more complicated in the stone paper spectra. The software identified several small peaks. These don't give much insight beyond indicating trace amounts of magnesium seem to be present. We also see clear readings of carbon, oxygen, and calcium. All this makes sense as stone paper is made out of limestone--i.e. calcium carbonate (CaCO<sub>3</sub>).</p>
+            </div>
+            <img src="" alt=""/>
+            <!-- 
+                EDS for sputter coated premium bright printer paper.
+                EDS for sputter coated stone paper.
+             -->
+        </span>
+
+        <span class="wrap bgcolor1">
+            <img src="" alt=""/>
+            <!-- 
+                Take 1
+                Take 2
+                Take 3
+             -->
+            <div>
+                <h3 class="center">Electron Mirror</h3>
+                <p>It's generally important for samples to be conductive. Insulators hold on to charge from the beam and prevent imaging of the sample. However, this property can be exploited to create an electron mirror. </p>
+                <p>Below are images of the chamber of an Apreo 2 SEM.  The images were collected by directing the beam at a piece of plastic. The first image was collected using secondary electrons (SE) and has good clarity apart from the charging streaks towards the top right. Imaging again with back-scatter electrons (BSE) removed most of the charging effect but reduced clarity. In a third attempt, the mirror was imaged again in SE mode at a lower magnification. This removed the charging effects while keeping the original clarity, albeit at the cost of less detail (contrast was also adjusted to reduce saturation around the nosepiece).</p>
+            </div>
+        </span>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>

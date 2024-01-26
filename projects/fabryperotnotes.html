@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <meta charset="utf-8" />
+    <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("../footer.html"); 
+      $("#header").load("../header.html");
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h1>
+            Optoelectronics Lab
+            <div class="subheading">Summer 2021, PHYS 627</div>
+        </h1>
+        <p>The fifth lab of PHYS 626 required building a Fabry Pérot Interferometer using two parallel planar mirrors. The goal of the first part of the lab was to measure the finesse of the interferometer. For the second part the goal was to use the interferometer to measure the finesse of a He-Ne laser.</p>
+        <p>Outlined on the first page of the notebook are initial plans for both parts of the lab. On the next three pages the process used to carry out the experiment is detailed. Discussion of the results is made in the last three pages.</p>
+        
+        <span class="showcase bgcolor2">
+            
+        </span>
+
+        <p>Shown below are the rings of the interferometer, as seen by a CCD camera, pulsating as the distance between the mirrors oscillates.</p>
+
+        <span class="showcase bgcolor2">
+            <figure>
+                <img src="../images/PHYS626NotebookSample/FringeAnimation.gif" alt="Animations of interferometer fringes.">
+                <caption>Obtained in collaboration with labmates Matthew Wells and Max Cannella.</caption>
+            </figure>
+        </span>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>
