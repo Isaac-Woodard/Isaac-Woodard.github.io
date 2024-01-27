@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <meta charset="utf-8" />
+    <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("../footer.html"); 
+      $("#header").load("../header.html");
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h1>
+            Physics Demos Site & Inventory
+            <div class="subheading">2019</div>
+        </h1>
+
+        <p>In 2019 I created a website using Google Sites to organize the demonstration equipment for Boise State University's Physics Department. The site hosted a page for each demo explaining how to perform it and where to find the equipment. The final site included pages for 90 demos.</p>
+        <p>Instead of posting screenshots of the site, you can see (most of) it for yourself! An outline of the site is linked below. Also linked is a template demo page and an example page for a demo with a Stirling engine.</p>
+
+        <span class="showcase bgcolor2">
+            <h2 class="center"><a href="https://sites.google.com/view/bsu-physics-demos-template/home">Demo Site Template</a></h2>
+        </span>
+        <span class="showcase bgcolor2">
+            <h3 class="center"><a href="https://sites.google.com/view/bsu-physics-demos-template/index/demo-template">Demo Page Template</a></h3>
+            <h3 class="center"><a href="https://sites.google.com/view/bsu-physics-demos-template/index/stirling-engine">Example Page for a Stirling Engine</a></h3>
+        </span>
+
+        <h3>Development</h3>
+        <p>This project started with creating a robust system for sorting the demo's for BSU's Physics Department. Previously the demos had been sorted by topic, e.g. classical mechanics, electricity & magnetism and so on. This left a lot of room for demos to move around and made it easy to misplace them. </p>
+        <p>To fix this issue, I used a decimal inventory system. Each cabinet was given a number and each shelf in the cabinet was also given a number. The location for a demo would then be in the form Room#.Cabinet#.Shelf#. A log was posted in the demo room with the appropriate location for each demo to make it easy to return the equipment.</p>
+        <p>After getting the equipment sorted, I began work on creating a reference manual for the department's demos. The goal of the manual was to make it easier for new instructors to figure out what demos were available and how to perform them. </p>
+        <p>The demo images and descriptions were first compiled into a Word document before I realized a website would be much more useful. Meanwhile, I was working on getting pictures of the equipment for each demo with the help of my coworkers Matthew Abramson and Prasanna Jayanthi.</p>
+        <p>The pages for the demos took on much the same form as in the original Word document with a Description, Notes & Hazards, and Operation section. Having a site, though, meant there were a variety of ways to group up and present the demos using links. I created different pages organizing the demos by topic, by course, by lab, and a handful of other categories. These pages made it easy for instructors of a specific course or lab to find relevant demos, rather than having to search on their own.</p>
+        <p>Besides the sorting on the website, each demo was also labeled with its classification from the Physics Instructor Resource Association (PIRA) bibliography to make it easier to find additional information for the demo.</p>
+
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>
