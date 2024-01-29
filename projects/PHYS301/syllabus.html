@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../../styles/styles.css"/>
+    <meta charset="utf-8" />
+    <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("../../footer.html"); 
+      $("#header").load("../../header.html");
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h1>
+            Syllabus
+        </h1>
+
+        <span class="showcase bgcolor2">
+            <object data="../../documents/PHYS301Syllabus.pdf" type="application/pdf" width="1000" height="800">PDF plugin isn't working, <a href="../../documents/PHYS301Syllabus.pdf">download here</a>.</object>
+        </span>
+
+        <a href="index.html">Back to PHYS 301</a>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>

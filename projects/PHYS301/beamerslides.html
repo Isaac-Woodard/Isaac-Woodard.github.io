@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../../styles/styles.css"/>
+    <meta charset="utf-8" />
+    <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("../../footer.html"); 
+      $("#header").load("../../header.html");
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h1>
+            LaTeX Beamer Slides
+        </h1>
+
+        <p>The semester before teaching the course, the professor I was covering for, Dr. Ferguson, shared his lecture materials with me. The lectures were arranged in documents using LaTeX. I anticipated needing to make changes to the documents given the course would be remote, so I went to work figuring out how to use LaTeX myself. The results of those efforts are showcased in the following two sample presentations.</p>
+        <p>To make the slides, I used the Beamer class rather than the document class Dr. Ferguson used.  In addition, I used the Focus theme rather than the default theme for the slide design.</p>
+        <p>My main reason for using slides was to make the lectures easier to follow for the students. Most of the work involved splitting up and reorganizing content to make sure everything was displayed clearly and none of the slides looked too busy. I also took the opportunity to make some additions to the content. </p>
+
+        <span class="showcase bgcolor2">
+            <object data="../../documents/PHYS301Lab2Slides.pdf" type="application/pdf" width="1000" height="800">PDF plugin isn't working, <a href="../../documents/PHYS301Lab2Slides.pdf">download here</a>.</object>
+            <object data="../../documents/PHYS301Lab5Slides.pdf" type="application/pdf" width="1000" height="800">PDF plugin isn't working, <a href="../../documents/PHYS301Lab5Slides.pdf">download here</a>.</object>
+        </span>
+
+        <a href="index.html">Back to PHYS 301</a>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>

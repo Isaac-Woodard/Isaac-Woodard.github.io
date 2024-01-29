@@ -15,6 +15,7 @@ https://isaac-woodard.github.io/
   - Fabry Perot project.
   - SEM project.
   - Paper SEM project.
+  - PHYS 301 CircuitLab and Homework Template
 - Limit width of header 1 to 20% margin.
 - Add images for paper SEM project.
 - Adjust image sizes for TEM project.

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="../../styles/styles.css"/>
+    <meta charset="utf-8" />
+    <title>Isaac's Portfolio</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#footer").load("../../footer.html"); 
+      $("#header").load("../../header.html");
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+    <main>
+        <h1>
+            CircuitLab
+        </h1>
+
+        <p>CircuitLab is an online platform which allows users to build and simulate circuits from schematic.  In the past it has been recommended to students as a resource but this semester it was used as the primary means of completing the lab exercises.</p>
+        <p>Using CircuitLab required modifying the instructions for the labs. The biggest change was explaining how to use the simulation interface to take measurements. CircuitLab has a few different simulation options including DC Simulation, Time-Domain Simulation, and Frequency-Domain Simulation. These had to be used to replace the operations of a multimeter and oscilloscope. Apart from this, some components had to be modified according to CircuitLab's availability and a few exercises had to be partially completed with MatLab.</p>
+        <p>Dr. Kim and I established a routine to complete the modifications. He first inserted new instructions explaining how to perform the exercise with CircuitLab. I would then work through the exercise on CircuitLab with the new instructions and get back to him with my feedback on what worked and what didn't.</p>
+        <p>Below are some CircuitLab schematics I built while testing the lab exercises. CircuitLab normally displays circuits with gridlines, but those have been removed for clarity.</p>
+
+        <span class="showcase bgcolor2">
+            <!-- 
+                A basic parallel RLC circuit.
+                A regulated power supply.
+                An FM radio transmitter.
+                An op-amp used as a current source. The resistor RL is used as a variable resistor.
+                A 555 timer set up in monostable mode.
+                An inverter made using CMOS transistors.
+             -->
+        </span>
+
+        <a href="index.html">Back to PHYS 301</a>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>
