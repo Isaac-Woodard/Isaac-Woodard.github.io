@@ -3,6 +3,7 @@ body.home {
                       url("../images/HomeBG.JPG");
     background-size: cover;
     background-position: 0% 50%;
+    background-repeat: no-repeat;
     overflow: hidden;
     font-family: 'Lato', 'Arial';
 }
@@ -10,7 +11,7 @@ body.home {
 main.home {
     display: flex;
     flex-flow: column;
-    height: calc(100vh - 55px);
+    height: 100vh;
 }
 
 nav.home {
