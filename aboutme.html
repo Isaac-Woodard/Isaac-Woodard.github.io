@@ -4,29 +4,27 @@
     <link rel="stylesheet" href="styles/styles.css"/>
     <meta charset="utf-8" />
     <title>Isaac's Portfolio</title>
+    <!-- TODO: May be able to load jquery script with footer script instead of here. -->
     <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
+        src="scripts/jquery-3.3.1.js">
     </script>
-    <script> 
-    $(function(){
-      $("#footer").load("footer.html"); 
-    });
+    <script
+        src="scripts/footer.js">
     </script> 
 </head>
 <body>
     <header>
         <nav>
-            <h2 class="nav"><a href="index.html">Home</a></h2>
-            <h2 class="nav"><a href="career.html">Career</a></h2>
-            <h2 class="nav"><a href="education.html">Education</a></h2>
-            <h2 class="nav"><a href="projects/index.html">Projects</a></h2>
-            <h2 class="nav"><strong>About Me</strong></h2>
+            <h2 class="nav"><a class="txtcolor1" href="index.html">Home</a></h2>
+            <h2 class="nav"><a class="txtcolor1" href="career.html">Career</a></h2>
+            <h2 class="nav"><a class="txtcolor1" href="education.html">Education</a></h2>
+            <h2 class="nav"><a class="txtcolor1" href="projects/index.html">Projects</a></h2>
+            <h2 class="nav txtcolor1"><strong>About Me</strong></h2>
         </nav>
     </header>
     <main>
-        <h1>About Me</h1>
+        <h1 class="center txtcolor1">About Me</h1>
+
         <span class="wrap">
             <img src="images/AboutMe/Portrait.JPG" alt="Portrait" width="300" height=""/>
             <div>

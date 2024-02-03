@@ -1,0 +1,43 @@
+body.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                      url("../images/HomeBG.JPG");
+    background-size: cover;
+    background-position: 0% 50%;
+    overflow: hidden;
+    font-family: 'Lato', 'Arial';
+}
+
+main.home {
+    display: flex;
+    flex-flow: column;
+    height: calc(100vh - 55px);
+}
+
+nav.home {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.0) 50%);
+}
+
+h1.home {
+    line-height: 86px;
+    font-weight: bold;
+    padding-top: calc(50vh - 55px);
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+
+h2.home, h3.home {
+    line-height: 1;
+    font-weight: bold;
+    padding-left: 0%;
+} 
+
+a.home {
+    text-decoration: none;
+    font-style: normal;
+}
+
+a:hover.home {
+    text-decoration: underline;
+    color: rgb(0, 152, 194);
+}

@@ -3,7 +3,9 @@ Site is under construction. Lots to do.
 https://isaac-woodard.github.io/
 
 #TODO
-- Move script for loading headers and footers into scripts folder.
+- Move script for loading headers and footers into scripts folder. Update html heads.
+  - Write the footer and header functions to take an input for the number of directory levels to ascend.
+- Write image gallery javascript class.
 - Add favicon
 - Use better selector for span.header.
 - Center footer. Remove on home page?
