@@ -21,55 +21,59 @@
         <div id="header"></div>
     </header>
     <main>
-        <h1>
+        <h1 class="center txtcolor1">
             Ideal Gas Simulation
             <div class="subtitle">December 2018 - September 2019</div>
         </h1>
 
-        <p>In December 2018 I started developing a program in Python to simulate an ideal gas made of elementary particles. The goal was to replace an old program being used for the Maxwell-Boltzmann Distribution lab in BSU's PHYS 309 course.  The program was finished in August and implemented into the course in September.</p>
-        <p>The main requirements for the lab exercise the program needed to satisfy were:</p>
-        <ul>
-            <li>Simulate a particle model of an ideal gas for at least 100 particles.</li>
-            <li>Have the ability to adjust the temperature of the gas.</li>
-            <li>Have a pause and reset feature.</li>
-            <li>Display the number of particles and gas temperature.</li>
-            <li>Have the ability to count the number of particles in a certain speed range.</li>
-            <li>Display the ideal Maxwell-Boltzmann Distribution curve for a given temperature.</li>
-        </ul>
-        <p><a href="https://github.com/Isaac-Woodard/portfolio/tree/main/Ideal%20Gas%20Simulation">Source code hosted on GitHub</a></p>
-
-        <span class="showcase">
-            <img src="" alt="">
+        <section>
+            <p>In December 2018 I started developing a program in Python to simulate an ideal gas made of elementary particles. The goal was to replace an old program being used for the Maxwell-Boltzmann Distribution lab in BSU's PHYS 309 course.  The program was finished in August and implemented into the course in September.</p>
+            <p>The main requirements for the lab exercise the program needed to satisfy were:</p>
+            <ul>
+                <li>Simulate a particle model of an ideal gas for at least 100 particles.</li>
+                <li>Have the ability to adjust the temperature of the gas.</li>
+                <li>Have a pause and reset feature.</li>
+                <li>Display the number of particles and gas temperature.</li>
+                <li>Have the ability to count the number of particles in a certain speed range.</li>
+                <li>Display the ideal Maxwell-Boltzmann Distribution curve for a given temperature.</li>
+            </ul>
+            <p><a href="https://github.com/Isaac-Woodard/portfolio/tree/main/Ideal%20Gas%20Simulation">Source code</a></p>
+        </section>
+        
+        <span class="wrap bgcolor1">
+            <img class="flex1" src="" alt="">
              <!-- 3D simulation window
             Particles highlighted in speed range
             Ideal MB curve window
             2D version -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PdLZDhLIB40?si=KN9O-yHRTqgn8X01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="flex1" width="560" height="315" src="https://www.youtube.com/embed/PdLZDhLIB40?si=KN9O-yHRTqgn8X01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </span>
 
-        <h3>Features & Design</h3>
-        <ul>
-            <li>The program starts with a default number of particles at randomly set initial velocities.</li>
-            <li>Pressing the "Pause" button freezes the simulation, while pressing the "Reset" button recreates the default number of particles.</li>
-            <li>The particle count, desired temperature, and speed of the simulation can be adjusted with sliders.</li>
-            <li>The number of particles (N), current temperature (T), and desired temperature (Target T), are shown in the Data section.</li>
-            <li>The temperature of the gas is changed by setting a target temperature. Particles colliding with the barriers of the simulation then either gain or lose energy (analogous to heat transfer) as needed to bring the temperature to the target.</li>
-            <li>A speed range can be specified using the text boxes in the Data section. Pressing the "Get Bin Count" button highlights the particles in that speed range and displays the count to the right of the button. The scale is set such that the particles typically range in speed from 0 to 2500 m/s. </li>
-            <li>The "Get Ideal MB Graph" button pops up a window showing the ideal Maxwell-Boltzmann Distribution curve for the current temperature.</li>
-        </ul>
-
-        <h3>Limitations</h3>
-        <ul>
-            <li>Resizing the window is disabled to prevent changing the simulation size.</li>
-            <li>The program lags at high speeds and particle counts.</li>
-            <li>The program can crash at high particle speeds. The maximum temperature is limited to avoid this.</li>
-        </ul>
-
-        <h3>Development</h3>
-        <p>The plan was initially to write the program in Java, but I switched to Python to make it more accessible for students. My only prior experience with making graphical user interfaces was with Java, so making one with Python required research into the  tkinter package.</p>
-        <p>The initial inspiration for the program's design came from the old version of this <a href="http://www.falstad.com/gas/">falstad applet</a>. Besides the graphical layout, both the collision and collision-checking algorithms of my simulation are based on those used in the applet (the Java source code for the applet can be found on the site).</p>
-        <p>Initially, the simulation used the same 2D collision algorithm as the applet, but this created a problem. Students would have to use the 2D, not 3D, version of the Maxwell-Boltzmann Distribution for their data analysis! While possible, conducting the lab in 2D would have created unnecessary confusion.</p>
-        <p>There were two challenges to changing the simulation to 3D which initially made me hesitant: changing the collision algorithm and displaying each particle's z-coordinate graphically. Changing the collision algorithm ended up being much easier than expected, but making the graphical change required some creativity. Rendering the particles in true 3D would have required further research and increased the hardware demands. In the end, I settled on the simple solution of adjusting the radius of the circle representing each particle according to its position along the z-axis. This means the virtual space of the simulation has two dimensions shown on screen while the third dimension is going into and out of the screen!</p>
+        <section>
+            <h3>Features & Design</h3>
+            <ul>
+                <li>The program starts with a default number of particles at randomly set initial velocities.</li>
+                <li>Pressing the "Pause" button freezes the simulation, while pressing the "Reset" button recreates the default number of particles.</li>
+                <li>The particle count, desired temperature, and speed of the simulation can be adjusted with sliders.</li>
+                <li>The number of particles (N), current temperature (T), and desired temperature (Target T), are shown in the Data section.</li>
+                <li>The temperature of the gas is changed by setting a target temperature. Particles colliding with the barriers of the simulation then either gain or lose energy (analogous to heat transfer) as needed to bring the temperature to the target.</li>
+                <li>A speed range can be specified using the text boxes in the Data section. Pressing the "Get Bin Count" button highlights the particles in that speed range and displays the count to the right of the button. The scale is set such that the particles typically range in speed from 0 to 2500 m/s. </li>
+                <li>The "Get Ideal MB Graph" button pops up a window showing the ideal Maxwell-Boltzmann Distribution curve for the current temperature.</li>
+            </ul>
+    
+            <h3>Limitations</h3>
+            <ul>
+                <li>Resizing the window is disabled to prevent changing the simulation size.</li>
+                <li>The program lags at high speeds and particle counts.</li>
+                <li>The program can crash at high particle speeds. The maximum temperature is limited to avoid this.</li>
+            </ul>
+    
+            <h3>Development</h3>
+            <p>The plan was initially to write the program in Java, but I switched to Python to make it more accessible for students. My only prior experience with making graphical user interfaces was with Java, so making one with Python required research into the  tkinter package.</p>
+            <p>The initial inspiration for the program's design came from the old version of this <a href="http://www.falstad.com/gas/">falstad applet</a>. Besides the graphical layout, both the collision and collision-checking algorithms of my simulation are based on those used in the applet (the Java source code for the applet can be found on the site).</p>
+            <p>Initially, the simulation used the same 2D collision algorithm as the applet, but this created a problem. Students would have to use the 2D, not 3D, version of the Maxwell-Boltzmann Distribution for their data analysis! While possible, conducting the lab in 2D would have created unnecessary confusion.</p>
+            <p>There were two challenges to changing the simulation to 3D which initially made me hesitant: changing the collision algorithm and displaying each particle's z-coordinate graphically. Changing the collision algorithm ended up being much easier than expected, but making the graphical change required some creativity. Rendering the particles in true 3D would have required further research and increased the hardware demands. In the end, I settled on the simple solution of adjusting the radius of the circle representing each particle according to its position along the z-axis. This means the virtual space of the simulation has two dimensions shown on screen while the third dimension is going into and out of the screen!</p>
+        </section>
     </main>
     <footer>
         <div id="footer"></div>

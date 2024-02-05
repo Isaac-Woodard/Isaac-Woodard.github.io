@@ -24,3 +24,4 @@ https://isaac-woodard.github.io/
 - Cite images for careers presentation
 - Update PDF fallback text.
 - Style table for electrostatics lab project.
+- Display formula properly on DLA page.

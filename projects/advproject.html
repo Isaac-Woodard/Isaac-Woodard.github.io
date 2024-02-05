@@ -21,24 +21,28 @@
         <div id="header"></div>
     </header>
     <main>
-        <h1>
-            Prototyping Active Alignment
+        <h1 class="center txtcolor1">
+            Active Beam Expander Alignment
             <div class="subtitle">Summer 2021</div>
         </h1>
 
-        <p>For the capstone project of my summer coursework in the KCGIP, I worked with my lab partner, Julia Thorpe, to prototype an actively aligning beam expander.  The project took place over the course of a month and finished with a presentation and paper.</p>
-        <p>"Active" meant adjusting the beam expander alignment based on feedback from the optical system. That feedback came from a beam profiler so that both the radial symmetry and collimation of the beam could be measured. The beam expander itself was composed of two lenses: one lens placed on a piezo stage oriented along the optical axis and the other lens placed on two piezo stages oriented perpendicularly in the transverse plane.</p>
-        <p>Apart from automating fine-tuning of the alignment, the purpose of the active alignment was to protect the beam expander from thermal fluctuations and mechanical disturbances.</p>
-
-        <span class="showcase bgcolor2">
-            <object data="../documents/AdvancedProject.pdf" type="application/pdf" width="1000" height="800">PDF plugin isn't working. Here's a <a href="../documents/AdvancedProject.pdf">download link</a>.</object>
+        <section>
+            <p>For the capstone project of my summer coursework in the KCGIP, I worked with my lab partner, Julia Thorpe, to prototype an actively aligning beam expander.  The project took place over the course of a month and finished with a presentation and paper.</p>
+            <p>"Active" meant adjusting the beam expander alignment based on feedback from the optical system. That feedback came from a beam profiler so that both the radial symmetry and collimation of the beam could be measured. The beam expander itself was composed of two lenses: one lens placed on a piezo stage oriented along the optical axis and the other lens placed on two piezo stages oriented perpendicularly in the transverse plane.</p>
+            <p>Apart from automating fine-tuning of the alignment, the purpose of the active alignment was to protect the beam expander from thermal fluctuations and mechanical disturbances.</p>
+        </section>
+        
+        <span class="wrap bgcolor1">
+            <object data="../documents/AdvancedProject.pdf" type="application/pdf" width="800" height="1000">PDF plugin isn't working. Here's a <a href="../documents/AdvancedProject.pdf">download link</a>.</object>
         </span>
 
-        <h3>Development Process</h3>
-        <p>The original plan was actually a different project entirely! A key piece of equipment broke in the first week, and after discovering it would need to be shipped out to be serviced, we were left brainstorming with our instructor for a new project that would meet goals similar to the first. </p>
-        <p>Those goals were automation and equipment interfacing. Automation is an essential part of mass production and often relies on interfacing with multiple pieces of hardware to give centralized control of the production process.  At some point a program is usually developed so less working knowledge is needed from the user, but during the prototyping phase development has to be done with a programming language.</p>
-        <p>Our plan for the new project was to use Python to interface with a controller for the piezo stages and with the beam profiler. Connecting everything to a central hub would allow the lenses to be positioned based on readings from the beam profiler. The first controller we tried for the stages didn't work, so we replaced it with three separate controllers: one for each piezo stage. Using code we found on GitHub from user Schlabonski (<a href="https://github.com/Schlabonski/cubini">link</a>) we were able to give commands to the controllers with Python.</p>
-        <p>In the end we ran out of time to finish automating the system. Programming documentation for Python for the beam profiler proved scarce and connection bugs made it difficult to control all three piezo stages at once. We were however able to show that the beam profiler could be used to detect changes in the optical profile of the beam expander over the movement range of the piezo stages.</p>
+        <section>
+            <h3>Development Process</h3>
+            <p>The original plan was actually a different project entirely! A key piece of equipment broke in the first week, and after discovering it would need to be shipped out to be serviced, we were left brainstorming with our instructor for a new project that would meet goals similar to the first. </p>
+            <p>Those goals were automation and equipment interfacing. Automation is an essential part of mass production and often relies on interfacing with multiple pieces of hardware to give centralized control of the production process.  At some point a program is usually developed so less working knowledge is needed from the user, but during the prototyping phase development has to be done with a programming language.</p>
+            <p>Our plan for the new project was to use Python to interface with a controller for the piezo stages and with the beam profiler. Connecting everything to a central hub would allow the lenses to be positioned based on readings from the beam profiler. The first controller we tried for the stages didn't work, so we replaced it with three separate controllers: one for each piezo stage. Using code we found on GitHub from user Schlabonski (<a href="https://github.com/Schlabonski/cubini">link</a>) we were able to give commands to the controllers with Python.</p>
+            <p>In the end we ran out of time to finish automating the system. Programming documentation for Python for the beam profiler proved scarce and connection bugs made it difficult to control all three piezo stages at once. We were however able to show that the beam profiler could be used to detect changes in the optical profile of the beam expander over the movement range of the piezo stages.</p>
+        </section> 
     </main>
     <footer>
         <div id="footer"></div>

@@ -73,6 +73,26 @@ a {
     color: rgb(0,101,128);
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    font-size: 11pt;
+    line-height: 3;
+}
+
+table { /* Table elements only used on electrolab page. */
+    width: 100%;
+    table-layout: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td {
+    padding: 15px;
+    font-size: 11pt;
+    vertical-align: text-top;
+}
+
 /* Navigation bar. */
 
 nav {
@@ -128,13 +148,6 @@ span.wrap {
     justify-content: center;
 }
 
-span.showcase { /* Might be able to just use span.wrap */
-    display: grid;
-    height: max-content;
-    padding: 2% 20% 2% 20%;
-    justify-content: center;
-}
-
 span.projects { /* Only used for the projects main page. */
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,7 +156,7 @@ span.projects { /* Only used for the projects main page. */
 }
 
 #footer {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
