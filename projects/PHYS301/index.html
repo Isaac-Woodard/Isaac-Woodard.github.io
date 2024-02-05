@@ -21,42 +21,46 @@
         <div id="header"></div>
     </header>
     <main>
-        <h1>
+        <h1 class="center txtcolor1">
             PHYS 301: Analog & Digital Electronics
             <div class="subtitle">January - May 2021</div>
         </h1>
 
-        <p>In the spring semester of 2021, I taught a section of the BSU Physics Department's Analog & Digital Electronics course. The course normally has two sections taught by Dr. Byung Kim and Dr. Matthew Ferguson. This semester Dr. Ferguson was on sabbatical, so I offered to cover for him. </p>
-        <p>The course was structured around two lab sessions each week where students built circuits covering a wide range of topics. The emphasis on lab experience and building functional circuits makes the course a key part of the department's undergraduate program. This is underlined by the individual circuit project students are expected to complete and present at the end of the semester. Taking the course years prior brought me from being confused by a combination series parallel schematic to wiring digital logic on a breadboard. </p>
-        <p>This practical emphasis was somewhat hampered by restrictions due to the pandemic, which pushed the course to being fully remote. I worked with Dr. Kim throughout the semester to maintain as much as possible the quality of the experience for the students. This involved adapting the assignments to use the CircuitLab simulating software and finding ways to make up for parts of the experience which couldn't be adapted.</p>
-        <p>Apart from my work with Dr. Kim to modify the labs to use CircuitLab, the main changes I made were arranging Dr. Ferguson's lecture notes onto slides using the Beamer class in LaTeX, having students submit their homework using LaTeX, and creating a new Resume Assignment. While the experience wasn't ideal, the course evaluations I received indicate my students very much enjoyed the course.</p>
+        <section>
+            <p>In the spring semester of 2021, I taught a section of the BSU Physics Department's Analog & Digital Electronics course. The course normally has two sections taught by Dr. Byung Kim and Dr. Matthew Ferguson. This semester Dr. Ferguson was on sabbatical, so I offered to cover for him.</p>
+            <p>The course was structured around two lab sessions each week where students built circuits covering a wide range of topics. The emphasis on lab experience and building functional circuits makes the course a key part of the department's undergraduate program. This is underlined by the individual circuit project students are expected to complete and present at the end of the semester. Taking the course years prior brought me from being confused by a combination series parallel schematic to wiring digital logic on a breadboard.</p>
+            <p>This practical emphasis was somewhat hampered by restrictions due to the pandemic, which pushed the course to being fully remote. I worked with Dr. Kim throughout the semester to maintain as much as possible the quality of the experience for the students. This involved adapting the assignments to use the CircuitLab simulating software and finding ways to make up for parts of the experience which couldn't be adapted.</p>
+            <p>Apart from my work with Dr. Kim to modify the labs to use CircuitLab, the main changes I made were arranging Dr. Ferguson's lecture notes onto slides using the Beamer class in LaTeX, having students submit their homework using LaTeX, and creating a new Resume Assignment. While the experience wasn't ideal, the course evaluations I received indicate my students very much enjoyed the course.</p>
+        </section>
 
-        <span class="showcase bgcolor1">
-            <h2 class="center"><a href="">Syllabus</a></h2>
-            <h2 class="center"><a href="">CircuitLab</a></h2>
-            <h2 class="center"><a href="">Course Evaluations</a></h2>
+        <span class="header bgcolor2">
+            <h2 class="flex1 center"><a href="syllabus.html">Syllabus</a></h2>
+            <h2 class="flex1 center"><a href="circuitlab.html">CircuitLab</a></h2>
+            <h2 class="flex1 center"><a href="courseevals.html">Course Evaluations</a></h2>
         </span>
-        <span class="showcase bgcolor1">
-            <h2 class="center"><a href="">Homework with LaTeX</a></h2>
-            <h2 class="center"><a href="">LaTeX Beamer Slides</a></h2>
-            <h2 class="center"><a href="">Resume Assignment</a></h2>
+        <span class="header bgcolor2">
+            <h2 class="flex1 center"><a href="hwtemplate.html">Homework with LaTeX</a></h2>
+            <h2 class="flex1 center"><a href="beamerslides.html">LaTeX Beamer Slides</a></h2>
+            <h2 class="flex1 center"><a href="resumeassignment.html">Resume Assignment</a></h2>
         </span>
 
-        <h3>LaTeX</h3>
-        <p>Let's take a moment to go over what LaTeX is. LaTeX is a typesetting system which in some ways can be viewed as a programming language. It differs from software like Microsoft Word (aka WYSIWYG software) in that the user gives instructions in code and the code is then compiled to produce the document. What LaTeX is most known for is the typesetting of mathematics, which is what makes it popular in the fields of mathematics and physics.  Math typesetting is just one of the many uses for the language, though! More generally it is capable of creating documents of any kind and even graphics and slideshows.</p>
-        <p>Though I had heard of LaTeX before, this was my first time using it. Learning the language was daunting at first, but the online LaTeX editor Overleaf made the process much easier. The site has great tutorials for all of LaTeX's basic features and the editor has helpful autofill suggestions. Using the platform is also free!</p>
-        <p>The main advantage of LaTeX is having precise control over formatting. My experience formatting lab manuals in Microsoft Word left me wishing for a platform with clear and consistent formatting options. In LaTeX, the raw code for the formatting is visible, making it easy to identify the source of any formatting and change it. And, of course, it has possibly the best options available for typesetting mathematics.</p>
-
-        <h3>Teaching with Zoom</h3>
-        <p>Lecture and lab were both delivered over Zoom. Each class began with a short lecture before dividing students up into pairs in breakout rooms to work on the lab exercise.</p>
-        <p>Lecturing over Zoom was familiar to me from my previous semester teaching introductory labs, but the addition of CircuitLab as a way for students to complete the lab exercises rather than analyze premade data added a new challenge. Even on a digital platform, helping someone troubleshoot is much easier to do in person! I learned a number of techniques to enable me to communicate with my students, such as working through theory on a writing pad, visualizing the problem as my students explained it to me, and screen sharing documents and software back and forth.</p>
-        <p>At first this challenge felt like an inconvenience, but over time I noticed it encouraged me to spend more time explaining how to fix problems and less time simply showing my students the solution. While the physicality of the circuit was still missed, my students likely obtained a better theoretical understanding because of it.</p>
-
-        <h3>Individual Circuit Projects</h3>
-        <p>The students' individual circuit projects presented a unique challenge this semester. To give students a chance to build a physical circuit, Dr. Kim and I worked with the stockroom to lend out equipment for our students to use for their projects. We removed the requirement for the circuits to be different from those built in lab to make things easier for the students.</p>
-        <p>Even with that change, though, the project had many unforeseen difficulties both for me and my students! To make sure they were making good progress, I scheduled project check-ins so I could see their circuits and encourage them to ask for help. While I expected the project to be difficult given their lack of prior experience using the equipment, it was impossible to imagine how many obstacles there would be. Each check-in took on the form of a troubleshooting sessions where I tried to decipher what was wrong with their circuit based on video of their oscilloscope traces and breadboards. The process was just as harrowing for them as they did their best to explain how they were using equipment they had never seen before.</p>
-        <p>One experience in particular stood out, where a student was having trouble getting a circuit using a transistor as a switch for an LED to work. Following a hunch, I asked them to check whether the button switch they were using was oriented incorrectly and shorting itself. This seemingly routine task them required me to explain how to use a multimeter to check for a short. After some back-and-forth discussion, the student got the process sorted out and it turned out the button switch was indeed shorting itself.</p>
-        <p>Despite the challenges, my students were able to build and present their circuits by the planned due date. The experience also gave me a newfound appreciation for how difficult it is to provide technical assistance remotely.</p>
+        <section>
+            <h3>LaTeX</h3>
+            <p>Let's take a moment to go over what LaTeX is. LaTeX is a typesetting system which in some ways can be viewed as a programming language. It differs from software like Microsoft Word (aka WYSIWYG software) in that the user gives instructions in code and the code is then compiled to produce the document. What LaTeX is most known for is the typesetting of mathematics, which is what makes it popular in the fields of mathematics and physics.  Math typesetting is just one of the many uses for the language, though! More generally it is capable of creating documents of any kind and even graphics and slideshows.</p>
+            <p>Though I had heard of LaTeX before, this was my first time using it. Learning the language was daunting at first, but the online LaTeX editor Overleaf made the process much easier. The site has great tutorials for all of LaTeX's basic features and the editor has helpful autofill suggestions. Using the platform is also free!</p>
+            <p>The main advantage of LaTeX is having precise control over formatting. My experience formatting lab manuals in Microsoft Word left me wishing for a platform with clear and consistent formatting options. In LaTeX, the raw code for the formatting is visible, making it easy to identify the source of any formatting and change it. And, of course, it has possibly the best options available for typesetting mathematics.</p>
+    
+            <h3>Teaching with Zoom</h3>
+            <p>Lecture and lab were both delivered over Zoom. Each class began with a short lecture before dividing students up into pairs in breakout rooms to work on the lab exercise.</p>
+            <p>Lecturing over Zoom was familiar to me from my previous semester teaching introductory labs, but the addition of CircuitLab as a way for students to complete the lab exercises rather than analyze premade data added a new challenge. Even on a digital platform, helping someone troubleshoot is much easier to do in person! I learned a number of techniques to enable me to communicate with my students, such as working through theory on a writing pad, visualizing the problem as my students explained it to me, and screen sharing documents and software back and forth.</p>
+            <p>At first this challenge felt like an inconvenience, but over time I noticed it encouraged me to spend more time explaining how to fix problems and less time simply showing my students the solution. While the physicality of the circuit was still missed, my students likely obtained a better theoretical understanding because of it.</p>
+    
+            <h3>Individual Circuit Projects</h3>
+            <p>The students' individual circuit projects presented a unique challenge this semester. To give students a chance to build a physical circuit, Dr. Kim and I worked with the stockroom to lend out equipment for our students to use for their projects. We removed the requirement for the circuits to be different from those built in lab to make things easier for the students.</p>
+            <p>Even with that change, though, the project had many unforeseen difficulties both for me and my students! To make sure they were making good progress, I scheduled project check-ins so I could see their circuits and encourage them to ask for help. While I expected the project to be difficult given their lack of prior experience using the equipment, it was impossible to imagine how many obstacles there would be. Each check-in took on the form of a troubleshooting sessions where I tried to decipher what was wrong with their circuit based on video of their oscilloscope traces and breadboards. The process was just as harrowing for them as they did their best to explain how they were using equipment they had never seen before.</p>
+            <p>One experience in particular stood out, where a student was having trouble getting a circuit using a transistor as a switch for an LED to work. Following a hunch, I asked them to check whether the button switch they were using was oriented incorrectly and shorting itself. This seemingly routine task them required me to explain how to use a multimeter to check for a short. After some back-and-forth discussion, the student got the process sorted out and it turned out the button switch was indeed shorting itself.</p>
+            <p>Despite the challenges, my students were able to build and present their circuits by the planned due date. The experience also gave me a newfound appreciation for how difficult it is to provide technical assistance remotely.</p>
+        </section>
     </main>
     <footer>
         <div id="footer"></div>

@@ -148,6 +148,15 @@ span.wrap {
     justify-content: center;
 }
 
+span.wrap2 {
+    display: flex;
+    height: max-content;
+    padding: 2% 20% 2% 20%;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;    
+}
+
 span.projects { /* Only used for the projects main page. */
     display: grid;
     grid-template-columns: 1fr 1fr;

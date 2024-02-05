@@ -25,3 +25,4 @@ https://isaac-woodard.github.io/
 - Update PDF fallback text.
 - Style table for electrostatics lab project.
 - Display formula properly on DLA page.
+- Make page html titles unique for each page.
