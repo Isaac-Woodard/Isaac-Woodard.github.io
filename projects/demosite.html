@@ -5,21 +5,15 @@
     <link rel="stylesheet" href="../styles/styles.css"/>
     <meta charset="utf-8" />
     <title>Isaac's Portfolio</title>
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
-    <script> 
-    $(function(){
-      $("#footer").load("../footer.html"); 
-      $("#header").load("../header.html");
-    });
-    </script> 
+    <script src="../scripts/header.js"></script>
+    <script defer src="../scripts/footer.js"></script>
 </head>
 <body>
     <header>
         <div id="header"></div>
+        <script>
+            header("../");
+        </script>
     </header>
     <main>
         <h1 class="center txtcolor1">
