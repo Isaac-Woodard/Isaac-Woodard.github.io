@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <link rel="stylesheet" href="../styles/styles.css"/>
     <meta charset="utf-8" />
-    <title>Isaac's Portfolio</title>
+    <title>DLA Simulation - Isaac's Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <link rel="stylesheet" href="../styles/slider.css">
     <script src="../scripts/header.js"></script>
     <script defer src="../scripts/footer.js"></script>
+    <script src="../scripts/imageslider.js"></script>
 </head>
 <body>
     <header>
@@ -33,23 +35,55 @@
         <span class="wrap bgcolor1">
             <div class="flex1">
                 <h3 class="center txtcolor1">Simulation</h3>
-                <img src="" alt="">
-                <!-- 
-                 Point Cluster | L = 200 N = 4000 S = 10% | Origins: All Borders
-                 Point-Wall Cluster | L = 200 N = 4000 S = 30% | Origins: W, N, E borders
-                 Wall Cluster | L = 200 N = 6000 S = 10% | Origins: Top Border
-                 Box Cluster | L = 200 N = 28000 S = 1% | Origins: Open Cells
-                -->
+                <div id="slider1" class="slider flex1 txtcolor1"></div>
+                <script>
+                    const images1 = [
+                        "../images/DLASimulation/ClusterPoint.png",
+                        "../images/DLASimulation/ClusterPointWall.png",
+                        "../images/DLASimulation/ClusterWall.png",
+                        "../images/DLASimulation/ClusterBox.png"
+                    ];
+                    const alts1 = [
+                        "Point cluster structure.",
+                        "Point-wall cluster structure.",
+                        "Wall cluster structure.",
+                        "Box cluster structure."
+                    ];
+                    const captions1 = [
+                        "Point Cluster | L = 200 N = 4000 S = 10% | Origins: All Borders",
+                        "Point-Wall Cluster | L = 200 N = 4000 S = 30% | Origins: W, N, E borders",
+                        "Wall Cluster | L = 200 N = 6000 S = 10% | Origins: Top Border",
+                        "Box Cluster | L = 200 N = 28000 S = 1% | Origins: Open Cells"
+                    ];
+
+                    const slider1 = new ImageSlider("slider1", 873, 864, images1, alts1, captions1)
+                </script>
             </div>
             <div class="flex1">
                 <h3 class="center txtcolor1">Physical Example</h3>
-                <img src="" alt="">
-                <!-- 
-                 Electrodeposition | Johnson K. (2006). Licensed under Creative Commons on Wikimedia Commons 
-                 Coral | Dirscherl R. (n.d.). Found on cosmosmagazine.com
-                 Manganese Dendrites | Wilson M. (2008). From Wikimedia Commons. 
-                 Frost on a Window | Blitzmaerker. (n.d.). Licensed under Creative Commons on Pixabay.
-                -->
+                <div id="slider2" class="slider flex1 txtcolor1"></div>
+                <script>
+                    const images2 = [
+                        "../images/DLASimulation/Electrodeposition.jpg",
+                        "../images/DLASimulation/Coral.jpg",
+                        "../images/DLASimulation/Dendrites.jpg",
+                        "../images/DLASimulation/Frost.jpg"
+                    ];
+                    const alts2 = [
+                        "Electrodeposition of copper.",
+                        "Argonian coral.",
+                        "Manganese dendrites.",
+                        "Frost on a window."
+                    ];
+                    const captions2 = [
+                        "Electrodeposition | Johnson K. (2006). Licensed under Creative Commons on Wikimedia Commons",
+                        "Coral | Dirscherl R. (n.d.). Found on cosmosmagazine.com",
+                        "Manganese Dendrites | Wilson M. (2008). From Wikimedia Commons.",
+                        "Frost on a Window | Blitzmaerker. (n.d.). Licensed under Creative Commons on Pixabay."
+                    ];
+
+                    const slider2 = new ImageSlider("slider2", 873, 864, images2, alts2, captions2)
+                </script>
             </div> 
         </span>
 
@@ -60,18 +94,34 @@
                 <p>At this point, the simulation starts creating one particule at a time and moving it horizontally or vertically in the grid until it encounters a filled cell. This is also known as a random walk and the moving particle is called the random walker. "Encountering" a filled cell means entering an adjacent or diagonal cell, shown as grey in the diagram.</p>
                 <p>When the random walker encounters a filled cell, one of two things can happen depending on the value of the sticky coefficient. If the coefficient is 1, the walker will stick and become part of the cluster. If the coefficient is less than 1, the walker may continue moving rather than sticking to the cluster.</p>
             </div>
-            <img src="../images/DLASimulation/Example1.png" alt="Neighbor diagram." width="" height=""/>
+            <img src="../images/DLASimulation/Example1.png" width="364" height="330" alt="Neighbor diagram." width="" height=""/>
         </span>
 
         <span class="wrap bgcolor2">
-            <img src="" alt=""/>
-            <!-- 
-                Age-scale version of a different point cluster.
-                Age-scale version of the Point-Wall cluster.
-                Age-scale version of the Wall Cluster.
-                Age-scale version of the Box Cluster.
-             -->
-             <div>
+            <div id="slider3" class="slider flex67 txtcolor0"></div>
+                <script>
+                    const images3 = [
+                        "../images/DLASimulation/ClusterAgePoint.png",
+                        "../images/DLASimulation/ClusterAgePointWall.png",
+                        "../images/DLASimulation/ClusterAgeWall.png",
+                        "../images/DLASimulation/ClusterAgeBox.png"
+                    ];
+                    const alts3 = [
+                        "Age coloring for point cluster structure.",
+                        "Age coloring for point-wall cluster structure.",
+                        "Age coloring for wall cluster structure.",
+                        "Age coloring for box cluster structure."
+                    ];
+                    const captions3 = [
+                        "Age-scale version of a different point cluster.",
+                        "Age-scale version of the Point-Wall cluster.",
+                        "Age-scale version of the Wall Cluster.",
+                        "Age-scale version of the Box Cluster."
+                    ];
+
+                    const slider3 = new ImageSlider("slider3", 873, 864, images3, alts3, captions3)
+                </script>
+             <div class="flex1">
                 <h3 class="center">Cluster Shape & Parameters</h3>
                 <p>The shape of the cluster is primarily determined by the location and shape of the seed, the possible starting locations of the walkers, and the sticky coefficient <var>S</var>.  The diagrams on the left display the age of each cell in the cluster, with black being the oldest and yellow the youngest. We can see the walkers are unlikely to reach the inner branches as the cluster grows in size.</p>
                 <p>The other two parameters are the length of the grid boundary <var>L</var> and the number of walkers <var>N</var>. Increasing the size of the grid has a large impact on the runtime of the algorithm since each walker has to encounter the cluster to stick. In contrast, adding additional walkers has a small effect on the runtime because it is easier to encounter the cluster as it grows larger. However, adding too many walkers oversaturates the cluster and damages the fractal pattern. </p>
@@ -87,11 +137,11 @@
                 <p>Typically, the number of squares is found for multiple square sizes as the algorithm searches for the smallest possible size. This gives a set of values which can be plotted on a log graph with the slope being the negation of the fractal dimension.</p>
                 <math>N(r) proportional r<sup>-d</sup> arrow log N = -d x log r</math>
             </div>
-            <img src="../images/DLASimulation/Example2.png" alt="Fractal dimension diagram."/>
+            <img src="../images/DLASimulation/Example2.png" width="364" height="334" alt="Fractal dimension diagram."/>
         </span>
 
         <span class="wrap bgcolor2">
-            <img src="../images/DLASimulation/Graph.png" alt="Fractal dimension comparisons."/>
+            <img src="../images/DLASimulation/Graph.png" width="464" height="322" alt="Fractal dimension comparisons."/>
             <div>
                 <h3 class="center">Results</h3>
                 <p>The minimum fractal dimension of the clusters was 1.479, indicating they do indeed have significant fractal properties.</p>

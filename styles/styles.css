@@ -154,7 +154,7 @@ span.wrap2 {
     padding: 2% 20% 2% 20%;
     gap: 20px;
     align-items: start;
-    justify-content: center;    
+    justify-content: center;
 }
 
 span.projects { /* Only used for the projects main page. */
@@ -167,6 +167,13 @@ span.projects { /* Only used for the projects main page. */
 #footer {
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+/* Unique */
+#idealgasframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1002/742;
 }
 
 /* Modifiers. */
@@ -215,5 +222,9 @@ span.projects { /* Only used for the projects main page. */
 }
 
 .flex1 {
-    flex:1
+    flex: 1;
+}
+
+.flex67 {
+    flex: 0.67;
 }

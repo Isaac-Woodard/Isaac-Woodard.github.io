@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <meta charset="utf-8"/>
+    <title>Ideal Gas Simulation - Isaac's Portfolio</title>
     <link rel="stylesheet" href="../styles/styles.css"/>
-    <meta charset="utf-8" />
-    <title>Isaac's Portfolio</title>
+    <link rel="stylesheet" href="../styles/slider.css">
     <script src="../scripts/header.js"></script>
     <script defer src="../scripts/footer.js"></script>
+    <script src="../scripts/imageslider.js"></script>
 </head>
 <body>
     <header>
@@ -34,13 +36,31 @@
             <p><a href="https://github.com/Isaac-Woodard/portfolio/tree/main/Ideal%20Gas%20Simulation">Source code</a></p>
         </section>
         
-        <span class="wrap bgcolor1">
-            <img class="flex1" src="" alt="">
-             <!-- 3D simulation window
-            Particles highlighted in speed range
-            Ideal MB curve window
-            2D version -->
-            <iframe class="flex1" width="560" height="315" src="https://www.youtube.com/embed/PdLZDhLIB40?si=KN9O-yHRTqgn8X01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <span class="wrap2 bgcolor1">
+            <div id="slider1" class="slider flex1 txtcolor1"></div>
+            <script>
+                const images = [
+                    "../images/IdealGasSimulation/3D-Default.png",
+                    "../images/IdealGasSimulation/3D-BinCount.png",
+                    "../images/IdealGasSimulation/3D-MBDistribution.png",
+                    "../images/IdealGasSimulation/2D-Default.png"
+                ];
+                const alts = [
+                    "GUI for 3D version.",
+                    "3D version with particles in a certain speed range highlighted.",
+                    "Window for ideal Maxwell-Boltzmann curve.",
+                    "GUI for 2D version."
+                ];
+                const captions = [
+                    "3D simulation window",
+                    "Particles highlighted in speed range",
+                    "Ideal MB curve window",
+                    "2D version"
+                ];
+
+                const slider1 = new ImageSlider("slider1", 1002, 742, images, alts, captions)
+            </script>
+            <iframe id="idealgasframe" class="flex1" width="1002" height="742" src="https://www.youtube.com/embed/PdLZDhLIB40?si=KN9O-yHRTqgn8X01" title="YouTube video player" frameborder="0" allow="web-share" allowfullscreen></iframe>
         </span>
 
         <section>

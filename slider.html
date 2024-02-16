@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="slider.css">
+        <script src="imageslider.js"></script>
+    </head>
+    <body>
+        <div id="slider1" class="slider"></div>
+        <script>
+            const images = [
+                "images/pic1.jpg",
+                "images/pic2.jpg",
+                "images/pic3.jpg"
+            ];
+            const alts = [
+                "Alt text 1.",
+                "Alt text 2.",
+                "Alt text 3."
+            ];
+            const captions = [
+                "Caption 1.",
+                "Caption 2.",
+                "Caption 3."
+            ];
+
+            const slider1 = new ImageSlider("slider1", 640, 480, images, alts, captions)
+        </script>
+    </body>
+</html>

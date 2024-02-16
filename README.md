@@ -1,19 +1,22 @@
-Site is under construction. Lots to do.
+# Overview
+This is the repo for my portfolio website. You can view the website with the link below:
 
-https://isaac-woodard.github.io/
+[https://isaac-woodard.github.io/]()
 
-#TODO
-- Move script for loading headers and footers into scripts folder. Update html heads.
-  - Write the footer and header functions to take an input for the number of directory levels to ascend.
-- Write image gallery javascript class.
+I keep source code for projects on this repo:
+
+[https://github.com/Isaac-Woodard/portfolio/]()
+
+# Contents
+...
+
+# TODO
 - Add favicon
 - Use better selector for span.header.
 - Center footer. Remove on home page?
 - Handle case for portrait view of front page. Background image gets tiled.
 - Improve layout and styling for file contents info of Genome Sort & Search project.
-- Figure out image carousel (with captions) for :
-  - Ideal Gas Simulation project. (Also fix indenting for bullets)
-  - DLA sim project.
+- Figure out image carousel for:
   - Fabry Perot project.
   - SEM project.
   - Paper SEM project.
@@ -25,4 +28,4 @@ https://isaac-woodard.github.io/
 - Update PDF fallback text.
 - Style table for electrostatics lab project.
 - Display formula properly on DLA page.
-- Make page html titles unique for each page.
+- Make html titles unique for each page.
