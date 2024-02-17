@@ -2,25 +2,40 @@ class ImageSlider {
     #id;
     #width; #height;
     #images; #alts; #captions;
+    #arrowclass; #dotclass;
     #current;
 
-    constructor(id, width, height, images, alts, captions) {
+    /*
+        Builds the html elements for an image slider on a target element with the
+        specified id.
+
+        width: Width to set for image elements.
+        height: Height to set for image elements.
+        arrowclass: Class(es) to add to previous and next buttons.
+        dotclass: Class(es) to add to dot buttons.
+    */
+    constructor(id, width, height, images, alts, captions, arrowclass, dotclass) {
         this.id = id;
         this.width = width;
         this.height = height;
         this.images = images;
         this.alts = alts;
         this.captions = captions;
+        this.arrowclass = arrowclass;
+        this.dotclass = dotclass;
         this.current = 0;
 
         this.makeSlider();
     }
 
     makeSlider() {
+        const slider = document.getElementById(this.id);
+
         let i = this.current;
 
         const div_display = document.createElement("div");
         div_display.setAttribute("class", "display");
+        slider.appendChild(div_display);
 
         // Display Image
         const img = document.createElement("img");
@@ -30,26 +45,27 @@ class ImageSlider {
         img.setAttribute("width", this.width.toString());
         img.setAttribute("height", this.height.toString());
 
+        div_display.appendChild(img);
+
         // Previous Button
         const prev = document.createElement("button");
-        prev.setAttribute("class", "prev");
+        prev.setAttribute("class", "prev " + this.arrowclass);
         prev.addEventListener("click", () => this.prevImage());
         prev.textContent = "❮";
 
         // Next Button
         const next = document.createElement("button");
-        next.setAttribute("class", "next");
+        next.setAttribute("class", "next " + this.arrowclass);
         next.addEventListener("click", () => this.nextImage());
         next.textContent = "❯";
 
-        // div_display.appendChild(prev);
-        div_display.appendChild(img);
-        // div_display.appendChild(next);
-
         // Caption
-        const caption = document.createElement("p");
-        caption.setAttribute("class", "caption");
-        caption.textContent = this.captions[i];
+        if (this.captions.length === this.images.length) {
+            const caption = document.createElement("p");
+            caption.setAttribute("class", "caption");
+            caption.textContent = this.captions[i];
+            slider.appendChild(caption);
+        }
 
         // Dot Buttons
         const div_buttons = document.createElement("div");
@@ -57,16 +73,15 @@ class ImageSlider {
         div_buttons.appendChild(prev);
         for (let i = 0; i < this.images.length; i++) {
             const dot = document.createElement("button");
-            dot.setAttribute("class", "dot");
+            if (i === 0) {
+                dot.setAttribute("class", "dot active " + this.dotclass);
+            } else {
+                dot.setAttribute("class", "dot " + this.dotclass);
+            }
             dot.addEventListener("click", () => this.setImage(i));
             div_buttons.appendChild(dot);
         }
         div_buttons.appendChild(next);
-
-        // Add to Target
-        const slider = document.getElementById(this.id);
-        slider.appendChild(div_display);
-        slider.appendChild(caption);
         slider.appendChild(div_buttons);
     }
 
@@ -78,16 +93,20 @@ class ImageSlider {
         img.setAttribute("src", this.images[i]);
         img.setAttribute("alt", this.alts[i]);
 
-        const caption = slider.children[1];
-        caption.textContent = this.captions[i];
+        let k = 1;
+        if (this.captions.length === this.images.length) {
+            const caption = slider.children[1];
+            caption.textContent = this.captions[i];
+            k = 2;
+        }
 
-        const div_buttons = slider.children[2];
+        const div_buttons = slider.children[k];
         for (let j = 1; j < div_buttons.children.length-1; j++) {
             const dot = div_buttons.children[j];
             if (j-1 === i) {
-                dot.setAttribute("class", "dot active")
+                dot.setAttribute("class", "dot active " + this.dotclass)
             } else {
-                dot.setAttribute("class", "dot")
+                dot.setAttribute("class", "dot " + this.dotclass)
             }
         }
     }

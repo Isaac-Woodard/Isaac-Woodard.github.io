@@ -1,6 +1,7 @@
+/* Styling for image sliders. */
 p.caption {
-    font-size: 8pt;
     margin: 5px;
+    font-size: 8pt;
     text-align: center;
 }
 
@@ -22,7 +23,6 @@ img.slide {
 
 button.prev, button.next {
     cursor: pointer;
-    color: white;
     background-color: rgba(0, 0, 0, 0.0);
     border: none;
     font-weight: bold;
@@ -36,6 +36,7 @@ button.prev:hover, button.next:hover {
 }
 
 div.buttonrow {
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +47,6 @@ button.dot {
     cursor: pointer;
     height: 8px;
     width: 16px;
-    background-color: white;
     border: 0;
     border-radius: 10%;
     transition: background-color 0.6s ease;

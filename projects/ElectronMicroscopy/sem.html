@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <link rel="stylesheet" href="../../styles/styles.css"/>
     <meta charset="utf-8" />
-    <title>Isaac's Portfolio</title>
+    <title>SEM Imaging - Isaac's Portfolio</title>
+    <link rel="stylesheet" href="../../styles/styles.css"/>
+    <link rel="stylesheet" href="../../styles/slider.css">
     <script src="../../scripts/header.js"></script>
     <script defer src="../../scripts/footer.js"></script>
+    <script src="../../scripts/imageslider.js"></script>
 </head>
 <body>
     <header>
@@ -58,7 +60,7 @@
         </span>
 
         <span class="wrap2 bgcolor2">
-            <div>
+            <div class="flex1">
                 <h3 class="center">Sample Preparation</h3>
                 <p>There are two main concerns when preparing SEM samples: </p>
                 <ol>
@@ -68,48 +70,96 @@
                 <p>The method of sample preparation I have the most experience with is sputter coating. It addresses the charge conduction need by coating the sample in a thin layer of metal using vapor deposition. Gold and palladium are commonly used--likely to avoid undesirable oxidation while transporting the sample.</p>
                 <p>Sputter coating is not suitable for heat sensitive materials and is likely to damage organic specimens. Some damage can be seen in the curling of the stone paper I tried to sputter coat! The regular paper and fly (not mine) didn't show signs of damage.</p>
             </div>
-            <img src="" alt="" width="500"/>
-            <!-- 
-               Premium printer, index card, and stone paper samples. 
-               Paper samples after sputter coating. Fly not mine.
-             -->
+            <figure class="center flex1">
+                <div id="slider1" class="slider flex1 txtcolor0"></div>
+            </figure>
+            <script>
+                const images1 = [
+                    "../../images/ElectronMicroscopy/SEM/UnpreppedSamples.jpg",
+                    "../../images/ElectronMicroscopy/SEM/PreppedSamples.jpg" 
+                ];
+                const alts1 = [
+                    "Paper samples on sputter coater stage.",
+                    "Samples after sputer coating."
+                ];
+                const captions1 = [
+                    "Premium printer, index card, and stone paper samples.",
+                    "Paper samples after sputter coating. Fly not mine but also very interesting..."
+                ];
+
+                const slider1 = new ImageSlider("slider1", 700, 394, images1, alts1, captions1, "txtcolor2", "bgcolor1");
+            </script>
         </span>
 
         <span class="wrap2">
-            <img src="" alt="" width="500"/>
-            <!-- 
-                Sputter coated stone paper at 25000x magnification.
-                Uncoated stone paper at 10000x magnification.
-             -->
-            <div>
+            <figure class="center flex1">
+                <div id="slider2" class="slider txtcolor0"></div>
+            </figure>
+            <script>
+                const images2 = [
+                    "../../images/ElectronMicroscopy/SEM/HighVacStonePaper.png",
+                    "../../images/ElectronMicroscopy/SEM/LowVacStonePaper.png"   
+                ];
+                const alts2 = [
+                    "Sputter coated stone paper at 25000x magnification.",
+                    "Uncoated stone paper at 10000x magnification."
+                ];
+                const captions2 = alts2;
+
+                const slider2 = new ImageSlider("slider2", 1920, 1367, images2, alts2, captions2, "txtcolor2", "bgcolor1");
+            </script>
+            <div class="flex1">
                 <h3 class="center">Low Vacuum Imaging</h3>
                 <p>Sample preparation methods often involve some degree of damage to a sample. Low vacuum imaging provides a way to image insulating samples without any preparation. A small amount of water vapor is added to the chamber with the sample. This water vapor is ionized by the electron beam and acts as the vehicle for dissipating charge.</p>
                 <p>The introduction of water vapor in the chamber reduces the maximum imaging resolution, so there is a price to pay (beyond the dollar cost). This is shown in the pair of images on the left. The first is an image of sputter coated stone paper imaged in SE mode at 25000x, while the second is an image of uncoated stone paper at 10000x using low vacuum imaging. Compared to optical microscopy, the low vacuum results are impressive, but there is a significant loss in maximum resolution from standard SEM imaging.</p>
             </div>
         </span>
 
-        <span class="wrap2 bgcolor2">
-            <div>
+        <span class="wrap bgcolor2">
+            <div class="flex1">
                 <h3 class="center">EDS</h3>
                 <p>Energy-dispersive x-ray spectroscopy is a natural addition to an SEM's toolkit. The electron beam excites the electrons of the sample into higher states, leading to the generation of characteristic spectra. The spectra can be used to identify relative amounts of elements.</p>
                 <p>Some advantages of EDS are that it can be quick and isn't any more destructive than the electron beam itself. However, it is mostly limited to relative quantitative analysis. Absolute quantitative analysis is difficult, though it can be done by by collecting spectra from a reference sample of known composition. </p>
                 <p>Shown to the right are spectra for premium bright printer paper stone paper. The printer paper spectra is quite simple--we see gold and palladium peaks from the sputter coating and carbon and oxygen peaks from the organic material of the paper. Things are more complicated in the stone paper spectra. The software identified several small peaks. These don't give much insight beyond indicating trace amounts of magnesium seem to be present. We also see clear readings of carbon, oxygen, and calcium. All this makes sense as stone paper is made out of limestone--i.e. calcium carbonate (CaCO<sub>3</sub>).</p>
             </div>
-            <img src="" alt="" width="500"/>
-            <!-- 
-                EDS for sputter coated premium bright printer paper.
-                EDS for sputter coated stone paper.
-             -->
+            <figure class="center flex1">
+                <div id="slider3" class="slider txtcolor0"></div>
+            </figure>
+            <script>
+                const images3 = [
+                    "../../images/ElectronMicroscopy/SEM/PrinterPaperEDS.png",
+                    "../../images/ElectronMicroscopy/SEM/StonePaperEDS.png"
+                ];
+                const alts3 = [
+                    "EDS spectrum for sputter coated premium bright printer paper.",
+                    "EDS spectrum for sputter coated stone paper."  
+                ];
+                const captions3 = alts3;
+
+                const slider3 = new ImageSlider("slider3", 762, 335, images3, alts3, captions3, "txtcolor2", "bgcolor1");
+            </script>
         </span>
 
         <span class="wrap2">
-            <img src="" alt="" width="500"/>
-            <!-- 
-                Take 1
-                Take 2
-                Take 3
-             -->
-            <div>
+            <figure class="center flex1">
+                <div id="slider4" class="slider txtcolor0"></div>
+            </figure>
+            <script>
+                const images4 = [
+                    "../../images/ElectronMicroscopy/SEM/ElectronMirror1.png",
+                    "../../images/ElectronMicroscopy/SEM/ElectronMirror2.png",
+                    "../../images/ElectronMicroscopy/SEM/ElectronMirror3.png"
+                ];
+                const alts4 = [
+                    "Take 1",
+                    "Take 2",
+                    "Take 3"
+                ];
+                const captions4 = alts4;
+
+                const slider4 = new ImageSlider("slider4", 1920, 1367, images4, alts4, captions4, "txtcolor2", "bgcolor1");
+            </script>
+            <div class="flex1">
                 <h3 class="center">Electron Mirror</h3>
                 <p>It's generally important for samples to be conductive. Insulators hold on to charge from the beam and prevent imaging of the sample. However, this property can be exploited to create an electron mirror. </p>
                 <p>Below are images of the chamber of an Apreo 2 SEM.  The images were collected by directing the beam at a piece of plastic. The first image was collected using secondary electrons (SE) and has good clarity apart from the charging streaks towards the top right. Imaging again with back-scatter electrons (BSE) removed most of the charging effect but reduced clarity. In a third attempt, the mirror was imaged again in SE mode at a lower magnification. This removed the charging effects while keeping the original clarity, albeit at the cost of less detail (contrast was also adjusted to reduce saturation around the nosepiece).</p>

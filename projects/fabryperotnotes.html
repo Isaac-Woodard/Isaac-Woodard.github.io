@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <link rel="stylesheet" href="../styles/styles.css"/>
     <meta charset="utf-8" />
-    <title>Isaac's Portfolio</title>
+    <title>Fabry Pérot Interferometer - Isaac's Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <link rel="stylesheet" href="../styles/slider.css">
     <script src="../scripts/header.js"></script>
     <script defer src="../scripts/footer.js"></script>
+    <script src="../scripts/imageslider.js"></script>
 </head>
 <body>
     <header>
@@ -26,16 +28,39 @@
         </section>
         
         <span class="wrap bgcolor1">
-            <!-- TODO Image gallery of journal pages. -->
+            <div id="slider1" class="slider txtcolor1"></div>
+            <script>
+                const images = [
+                    "../images/PHYS626NotebookSample/Page1.jpg",
+                    "../images/PHYS626NotebookSample/Page2.jpg",
+                    "../images/PHYS626NotebookSample/Page3.jpg",
+                    "../images/PHYS626NotebookSample/Page4.jpg",
+                    "../images/PHYS626NotebookSample/Page5.jpg",
+                    "../images/PHYS626NotebookSample/Page6.jpg",
+                    "../images/PHYS626NotebookSample/Page7.jpg"
+                ];
+                const alts = [
+                    "Page 1 of notebook.",
+                    "Page 2 of notebook.",
+                    "Page 3 of notebook.",
+                    "Page 4 of notebook.",
+                    "Page 5 of notebook.",
+                    "Page 6 of notebook.",
+                    "Page 7 of notebook."
+                ];
+                const captions = [];
+
+                const slider1 = new ImageSlider("slider1", 500, 667, images, alts, captions, "txtcolor1", "bgcolor0");
+            </script>
         </span>
 
         <section>
             <p>Shown below are the rings of the interferometer, as seen by a CCD camera, pulsating as the distance between the mirrors oscillates.</p>
         </section>
 
-        <span class="showcase bgcolor1">
+        <span class="wrap bgcolor1">
             <figure class="center txtcolor1">
-                <img src="../images/PHYS626NotebookSample/FringeAnimation.gif" alt="Animations of interferometer fringes.">
+                <img src="../images/PHYS626NotebookSample/FringeAnimation.gif" width="640" height="480" alt="Animations of interferometer fringes.">
                 <caption>Obtained in collaboration with labmates Matthew Wells and Max Cannella.</caption>
             </figure>
         </span>

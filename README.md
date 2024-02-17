@@ -7,25 +7,12 @@ I keep source code for projects on this repo:
 
 [https://github.com/Isaac-Woodard/portfolio/]()
 
-# Contents
-...
+# Contents & Structure
+Main pages are kept in the root directory, except for the main projects page. Pages for other projects are kept in projects/ with more subfolders for groups of projects. Styling and scripts are kept in styles/ and scripts/, while images/ and documents/ contain image and PDF content.
 
 # TODO
 - Add favicon
 - Use better selector for span.header.
-- Center footer. Remove on home page?
-- Handle case for portrait view of front page. Background image gets tiled.
-- Improve layout and styling for file contents info of Genome Sort & Search project.
-- Figure out image carousel for:
-  - Fabry Perot project.
-  - SEM project.
-  - Paper SEM project.
-  - PHYS 301 CircuitLab and Homework Template
-- Limit width of header 1 to 20% margin.
-- Add images for paper SEM project.
-- Adjust image sizes for TEM project.
-- Cite images for careers presentation
 - Update PDF fallback text.
-- Style table for electrostatics lab project.
 - Display formula properly on DLA page.
 - Make html titles unique for each page.

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <link rel="stylesheet" href="../../styles/styles.css"/>
     <meta charset="utf-8" />
-    <title>Isaac's Portfolio</title>
+    <title>Paper SEM Imaging - Isaac's Portfolio</title>
+    <link rel="stylesheet" href="../../styles/styles.css"/>
+    <link rel="stylesheet" href="../../styles/slider.css">
     <script src="../../scripts/header.js"></script>
     <script defer src="../../scripts/footer.js"></script>
+    <script src="../../scripts/imageslider.js"></script>
 </head>
 <body>
     <header>
@@ -43,49 +45,92 @@
         </span>
         
         <span class="wrap bgcolor1">
-            <figure>
-            <!-- 
-                Stone Paper
-                Premium Printer Paper
-                Cardboard
-                Magazine
-                Magic: the Gathering Card
-                Paper Towel
-                Receipt
-                Tissue
-                Toilet Paper
-                Clean Room Wipe
-             -->
-            </figure>
-            <figure>
-            <!-- 
-                Stone Paper
-                Premium Printer Paper (1200x)
-                Cardboard
-                Magazine
-                Magic: the Gathering Card
-                Paper Towel
-                Receipt
-                Tissue
-                Toilet Paper
-                Clean Room Wipe
-             -->
-            </figure>
+            <div id="slider1" class="slider flex1 txtcolor1"></div>
+            <script>
+                const images1 = [
+                    "../../images/ElectronMicroscopy/Paper/Stone-Paper_100x.png",
+                    "../../images/ElectronMicroscopy/Paper/Printer-Paper_100x.png",
+                    "../../images/ElectronMicroscopy/Paper/Cardboard_100x.png",
+                    "../../images/ElectronMicroscopy/Paper/Magazine_100x.png",
+                    "../../images/ElectronMicroscopy/Paper/MTG_100x.png",
+                    "../../images/ElectronMicroscopy/Paper/Paper-Towel_100x.png",
+                    "../../images/ElectronMicroscopy/Paper/Receipt_100x.png",
+                    "../../images/ElectronMicroscopy/Paper/Tissue_100x.png",
+                    "../../images/ElectronMicroscopy/Paper/Toilet-Paper_100x.png",
+                    "../../images/ElectronMicroscopy/Paper/Wipe_100x.png"
+                ];
+                const alts1 = [
+                    "Stone Paper",
+                    "Premium Printer Paper",
+                    "Cardboard",
+                    "Magazine",
+                    "Magic: the Gathering Card",
+                    "Paper Towel",
+                    "Receipt",
+                    "Tissue",
+                    "Toilet Paper",
+                    "Clean Room Wipe"
+                ];
+                const captions1 = alts1;
+
+                const slider1 = new ImageSlider("slider1", 1920, 1367, images1, alts1, captions1, "txtcolor1", "bgcolor0");
+            </script>
+            <div id="slider2" class="slider flex1 txtcolor1"></div>
+            <script>
+                const images2 = [
+                    "../../images/ElectronMicroscopy/Paper/Stone-Paper_1000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Printer-Paper_1200x.png",
+                    "../../images/ElectronMicroscopy/Paper/Cardboard_1000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Magazine_1000x.png",
+                    "../../images/ElectronMicroscopy/Paper/MTG_1000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Paper-Towel_1000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Receipt_1000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Tissue_1000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Toilet-Paper_1000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Wipe_1000x.png"
+                ];
+                const alts2 = [
+                    "Stone Paper",
+                    "Premium Printer Paper (1200x)",
+                    "Cardboard",
+                    "Magazine",
+                    "Magic: the Gathering Card",
+                    "Paper Towel",
+                    "Receipt",
+                    "Tissue",
+                    "Toilet Paper",
+                    "Clean Room Wipe"
+                ];
+                const captions2 = alts2;
+
+                const slider2 = new ImageSlider("slider2", 1920, 1367, images2, alts2, captions2, "txtcolor1", "bgcolor0");
+            </script>
         </span>
 
         <span class="header bgcolor2">
             <h2 class="flex1 center txtcolor2">5000x</h2>
         </span>
         <span class="wrap bgcolor1">
-            <figure>
-            <!-- 
-                Stone Paper
-                Premium Printer Paper
-                Cardboard
-                Magazine 
-                Tissue
-            -->
-            </figure>
+            <div id="slider3" class="slider flex1 txtcolor1"></div>
+            <script>
+                const images3 = [
+                    "../../images/ElectronMicroscopy/Paper/Stone-Paper_5000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Printer-Paper_5000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Cardboard_5000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Magazine_5000x.png",
+                    "../../images/ElectronMicroscopy/Paper/Tissue_5000x.png"
+                ];
+                const alts3 = [
+                    "Stone Paper",
+                    "Premium Printer Paper",
+                    "Cardboard",
+                    "Magazine ",
+                    "Tissue"  
+                ];
+                const captions3 = alts3;
+
+                const slider3 = new ImageSlider("slider3", 960, 690, images3, alts3, captions3, "txtcolor1", "bgcolor0");
+            </script>
         </span>
     </main>
     <footer>

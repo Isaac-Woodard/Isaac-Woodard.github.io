@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <link rel="stylesheet" href="../../styles/styles.css"/>
     <meta charset="utf-8" />
-    <title>Isaac's Portfolio</title>
+    <title>CircuitLab - Isaac's Portfolio</title>
+    <link rel="stylesheet" href="../../styles/styles.css"/>
+    <link rel="stylesheet" href="../../styles/slider.css">
     <script src="../../scripts/header.js"></script>
     <script defer src="../../scripts/footer.js"></script>
+    <script src="../../scripts/imageslider.js"></script>
 </head>
 <body>
     <header>
@@ -27,14 +29,35 @@
         </section>
 
         <span class="wrap bgcolor1">
-            <!-- 
-                A basic parallel RLC circuit.
-                A regulated power supply.
-                An FM radio transmitter.
-                An op-amp used as a current source. The resistor RL is used as a variable resistor.
-                A 555 timer set up in monostable mode.
-                An inverter made using CMOS transistors.
-             -->
+            <div id="slider1" class="slider flex1 txtcolor1"></div>
+            <script>
+                const images = [
+                    "../../images/TeachingPHYS301/CircuitLab/Lab6.png",
+                    "../../images/TeachingPHYS301/CircuitLab/Lab8.png",
+                    "../../images/TeachingPHYS301/CircuitLab/Lab13.png",
+                    "../../images/TeachingPHYS301/CircuitLab/Lab21.png",
+                    "../../images/TeachingPHYS301/CircuitLab/Lab22.png",
+                    "../../images/TeachingPHYS301/CircuitLab/Lab23.png"
+                ];
+                const alts = [
+                    "A basic parallel RLC circuit.",
+                    "A regulated power supply.",
+                    "An FM radio transmitter.",
+                    "An op-amp used as a current source. The resistor RL is used as a variable resistor.",
+                    "A 555 timer set up in monostable mode.",
+                    "An inverter made using CMOS transistors."
+                ];
+                const captions = [
+                    "A basic parallel RLC circuit.",
+                    "A regulated power supply.",
+                    "An FM radio transmitter.",
+                    "An op-amp used as a current source. The resistor RL is used as a variable resistor.",
+                    "A 555 timer set up in monostable mode.",
+                    "An inverter made using CMOS transistors."
+                ];
+
+                const slider1 = new ImageSlider("slider1", 600, 600, images, alts, captions, "txtcolor1", "bgcolor0");
+            </script>
         </span>
 
         <span class="wrap">

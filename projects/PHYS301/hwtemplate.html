@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <link rel="stylesheet" href="../../styles/styles.css"/>
     <meta charset="utf-8" />
-    <title>Isaac's Portfolio</title>
+    <title>PHYS 301 Homework Template - Isaac's Portfolio</title>
+    <link rel="stylesheet" href="../../styles/styles.css"/>
+    <link rel="stylesheet" href="../../styles/slider.css">
     <script src="../../scripts/header.js"></script>
     <script defer src="../../scripts/footer.js"></script>
+    <script src="../../scripts/imageslider.js"></script>
 </head>
 <body>
     <header>
@@ -35,12 +37,34 @@
         </section>
 
         <span class="wrap bgcolor1">
-            <div>
+            <div id="slider1" class="slider flex1 txtcolor1"></div>
+            <script>
+                const images1 = [
+                    "../../images/TeachingPHYS301/HomeworkTemplate/MarkUp1.png",
+                    "../../images/TeachingPHYS301/HomeworkTemplate/MarkUp2.png"
+                ];
+                const alts1 = [
+                    "Screen 1 of LaTeX markup.",
+                    "Screen 2 of LaTeX markup."
+                ];
+                const captions1 = [];
 
-            </div>
-            <div>
-            
-            </div>
+                const slider1 = new ImageSlider("slider1", 785, 1009, images1, alts1, captions1, "txtcolor1", "bgcolor0");
+            </script>
+            <div id="slider2" class="slider flex1 txtcolor1"></div>
+            <script>
+                const images2 = [
+                    "../../images/TeachingPHYS301/HomeworkTemplate/Output1.png",
+                    "../../images/TeachingPHYS301/HomeworkTemplate/Output2.png"
+                ];
+                const alts2 = [
+                    "Page 1 of template document.",
+                    "Page 2 of template document."
+                ];
+                const captions2 = [];
+
+                const slider2 = new ImageSlider("slider2", 1275, 1650, images2, alts2, captions2, "txtcolor1", "bgcolor0");
+            </script>
         </span>
 
         <span class="wrap">
