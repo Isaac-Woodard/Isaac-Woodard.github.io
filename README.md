@@ -12,7 +12,3 @@ Main pages are kept in the root directory, except for the main projects page. Pa
 
 # TODO
 - Add favicon
-- Use better selector for span.header.
-- Update PDF fallback text.
-- Display formula properly on DLA page.
-- Make html titles unique for each page.
