@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Mansalva
+- Font Author: Copyright 2022 The Mansalva Project Authors (https://github.com/carolinashort/mansalva)
+- Font Source: http://fonts.gstatic.com/s/mansalva/v14/aWB4m0aacbtDfvq5NJllI47vdyBg.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
