@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Dice Simulator - Isaac's Portfolio</title>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <link rel="stylesheet" href="../styles/slider.css">
+    <script src="../scripts/header.js"></script>
+    <script defer src="../scripts/footer.js"></script>
+    <script src="../scripts/imageslider.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+        <script>
+            header("../");
+        </script>
+    </header>
+    <main>
+        <h1 class="center txtcolor1">
+            MATLAB Dice Simulator
+            <div class="subtitle">2024</div>
+        </h1>
+        <section>
+            <p>
+                This project showcases object-oriented programming, test suites, and app design for MATLAB through defining and building virtual dice.
+            </p>
+            <p>
+                <a href="https://github.com/Isaac-Woodard/portfolio/tree/main/MATLAB%20DiceRoller">Source code hosted on GitHub</a>
+            </p>
+        </section>
+
+        <section>
+            <h3>Object-Oriented Design</h3>
+
+            <p>
+                The abstract base class (ABC) Die is used to define the properties and methods all dice should share. There are two types of dice implemented from Die: NumericDie and CategoricDie. NumericDie can be used to create a typical numbered die, while CategoricDie uses strings for the sides of the die. Supporting functions for the project which don't belong in a specific class are kept in the +probability package. 
+            </p>
+            <p>
+                The class structure is mirrored by the test classes, with a separate test class for the +probability package. The test classes include setup and teardown functions to ensure the test suite executes at the correct directory level. This could be avoided by putting the tests in the same directory as the rest of the project, but it's best to avoid clutter. In other languages, import support is usually robust enough to avoid needing to change the working directory during execution.
+            </p>
+        </section>
+
+        <span class="wrap bgcolor1">
+            <img src="../images/MATLABDice/SystemDiagram.png" alt="A UML diagram of the project contents" width="100%" height="">
+        </span>
+
+        <section>
+            <h3>Real Dice vs. Virtual Dice</h3>
+
+            <p>
+                Virtual dice can't compete with the satisfaction of rolling real dice, but they are certainly far more convenient. Virtual dice always land flat, can be rerolled in fractions of a second, and never roll off the table! Since the purpose of a die is to be random, virtual dice have no practical disadvantage compared to physical dice and also offer the advantage of fine control of the die's weighting. A virtual die could, for example, easilly be programmed with a Gaussian weighting to favor central values over extreme values.
+            </p>
+        </section>
+
+        <span class="wrap bgcolor1">
+            <img src="../images/MATLABDice/ExampleDice.jpg" alt="A coin, d4, d6, d8, d10, d12, d20, and pair of d10s as a d100." width="100%" height="">
+        </span>
+        
+        <section>
+            <h3>GM Roller App</h3>
+            <p>
+                But who really wants a virtual die if rolling real dice is so much more fun? An easy answer is game masters for tabletop gaming. Rolling dice starts to lose its appeal when you need to do it dozens or hundreds of times over the course of a few hours for a bunch of unique dice mixtures. The GM Roller app is designed to make it easier to manage all those dice rolls while also keeping a log of all the results! 
+            </p>
+        </section>
+
+        <span class="wrap bgcolor1">
+            <div id="slider1" class="slider flex1 txtcolor1"></div>
+                <script>
+                    const images1 = [
+                        "../images/MATLABDice/GMRoller1.png",
+                        "../images/MATLABDice/GMRoller2.png",
+                        "../images/MATLABDice/GMRoller3.png"
+                    ];
+                    const alts1 = [
+                        "GM Roller app on startup.",
+                        "Output after rolling 2 d4s and 2 d8s.",
+                        "Output after rolling a direction die twice.",
+                    ];
+                    const captions1 = [
+                        "GM Roller app on startup.",
+                        "Output after rolling 2 d4s and 2 d8s.",
+                        "Output after rolling a direction die twice."
+                    ];
+
+                    const slider1 = new ImageSlider("slider1", 1024, 1096, images1, alts1, captions1, "txtcolor1", "bgcolor0");
+                </script>
+        </span>
+        
+        <section>
+            <h3>Software Development in MATLAB</h3>
+            <p>
+                It is possible to perform full software development in MATLAB from source code to distribution. However, this is only a good idea for small projects. MATLAB's object-oriented design and testing support is limited compared to other languages, and the proprietary nature of the software can make it difficult to distribute even if you have the money to spend on licenses. The GM Roller app, for example, can only be opened by someone who also owns a MATLAB license. There is a MATLAB compiler which can build programs into standalone executables which can be run by the freely available MATLAB Runtime, but the compiler is not available with a home license.
+            </p>
+    
+            <h3>Future Work</h3>
+            <p>
+                There are some other features which would be fun to explore:
+                <ul>
+                    <li>Physical dice can't be continuous, but virtual dice can! Why someone would want a continuous dice I'm not sure, but it would be cool. Weighting would be especially interesting.</li>
+                    <li>Real dice get their randomness from a variety of variables in the environment and the roll. In a sense, a real dice could be considered chaotic rather than random, or a mix of the two. Adding a simulation for a die in 3d space would allow exploring this relationship between chaos and randomness.</li>
+                </ul>
+    
+                There are also probably some bugs (I know of two so far in GMRoller). See if you can find them!
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+</html>
