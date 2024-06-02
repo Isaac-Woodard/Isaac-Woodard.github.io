@@ -51,6 +51,15 @@ function header (levels) {
     h2_about.setAttribute("class", "nav");
     h2_about.appendChild(a_about);
 
+    // Top
+    const a_top = document.createElement("a");
+    a_top.setAttribute("class", "txtcolor1");
+    a_top.setAttribute("href", "#top");
+    a_top.textContent = ("↑");
+    const h2_top = document.createElement("h2");
+    h2_top.setAttribute("class", "nav");
+    h2_top.appendChild(a_top);
+
     // Target and Container
     const header = document.getElementById("header");
     const nav = document.createElement("nav");
@@ -59,5 +68,6 @@ function header (levels) {
     nav.appendChild(h2_edu);
     nav.appendChild(h2_proj);
     nav.appendChild(h2_about);
+    nav.appendChild(h2_top)
     header.appendChild(nav);
 }
