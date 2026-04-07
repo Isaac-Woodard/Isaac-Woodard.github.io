@@ -3,8 +3,8 @@
 // Email
 small1 = document.createElement("small");
 link1 = document.createElement("a");
-link1.setAttribute("href", "mailto:isaac.j.woodard@gmail.com")
-link1.textContent = "isaac.j.woodard@gmail.com";
+link1.setAttribute("href", "mailto:isaac.w.hach@gmail.com")
+link1.textContent = "isaac.w.hach@gmail.com";
 small1.appendChild(link1);
 small1.appendChild(document.createElement("br"));
 
