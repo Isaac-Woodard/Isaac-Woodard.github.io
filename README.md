@@ -1,5 +1,5 @@
 # Overview
-This is the repo for my portfolio website. You can view the website with the link below:
+This is the repo for my portfolio website. You can view the website with the link below (may need to copy and paste instead of clicking):
 
 [https://isaac-woodard.github.io/]()
 
